@@ -428,8 +428,9 @@ a {
 /* Section 5 "Prices" - Article1 "Basic Site" - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article1 {
-    box-shadow: none;
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
     height: 67em;
+    width: 75%;
   }
 }
 
@@ -454,8 +455,9 @@ a {
 /* Section 5 "Prices" - Article2 "Custom Site" - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article2 {
-    box-shadow: none;
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
     height: 80em;
+    width: 75%;
   }
 }
 
@@ -517,7 +519,7 @@ a {
   font-weight: 200;
   font-size: 1.3em;
   color: #000000;
-  margin-top: 2em;
+  margin-top: 0em;
 }
 
 /* Paragraph2 text (Section 5 "Prices" - Article1) - Desktop/Responsive Design: Paragraph which lists what the product receives */ 
@@ -534,7 +536,7 @@ a {
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #000000;
   margin-top: 2em;
 }

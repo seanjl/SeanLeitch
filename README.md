@@ -1,2 +1,2 @@
 # SeanLeitch
-Sean Leitch Website
+This is my personal website and portfolio.

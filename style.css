@@ -1,3 +1,4 @@
+
 /* Sean Leitch, Snowblock Studios March 2019 */
 html {
   padding: 0;
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   padding: 0;
   margin: 0;
 }
@@ -15,7 +16,7 @@ body {
 /* Body - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
   body {
-    max-width: 720px;
+    width: 100%;
     background-color: #ffffff;
   }  
 }
@@ -57,7 +58,7 @@ main {
 @media only screen and (max-width: 720px) { 
   main {
     position: relative;
-    top: -25px;
+    top: -32px;
     left: 0;
     width: 100%;
     margin: auto;
@@ -69,7 +70,7 @@ main {
 @media only screen and (min-width: 720px) { 
   main {
     position: relative;
-    top: -25px;
+    top: -32px;
     left: 0;
     width: 100%;
     max-width: 1280px;
@@ -219,6 +220,16 @@ a {
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #ffc1e3;
+}
+
+/* Image (Icons for each section) */
+.index-main--icon-img {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  transition: all 0.15s ease-in-out;
 }
 
 /* Title text (Section 2 "What I Do") */
@@ -395,18 +406,18 @@ a {
   flex-flow: row wrap;
   width: 100%;
   margin: none;
-  background-color: #023602;
 }
 
 /* Section 5 "Prices" - Article1 "Basic Site" */
 .index-main-section5-container-article1 {
   position: relative;
   display: flex;
+  flex-direction: column;
   font-size: 12pt;
   margin: auto;
   margin-bottom: 2em;
   width: 90%;
-  height: 10em;
+  height: 54em;
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -415,15 +426,164 @@ a {
   box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
 }
 
+/* Section 5 "Prices" - Article1 "Basic Site" - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .index-main-section5-container-article1 {
+    box-shadow: none;
+    height: 67em;
+  }
+}
+
+/* Section 5 "Prices" - Article2 "Custom Site" */
+.index-main-section5-container-article2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 12pt;
+  margin: auto;
+  margin-bottom: 2em;
+  width: 90%;
+  height: 60em;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
+}
+
+/* Section 5 "Prices" - Article2 "Custom Site" - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .index-main-section5-container-article2 {
+    box-shadow: none;
+    height: 80em;
+  }
+}
+
+/* Image (Section 5 "Prices" - Article1): small icons which represent each website */
+.index-main--section5-img {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  box-shadow: 0 2px 3px 0px rgba(0,0,0,0.16), 0 2px 3px 1px rgba(0,0,0,0.23);
+  margin: auto;
+}
+
 /* Subtitle text (Section 5 "Prices" - Article1): the titles of each product article */
 .index-main--section5-text-subtitle {
+  display: flex;
   position: relative;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2em;
   color: #000000;
   transition: all 1.5s ease-in-out;
+  margin-bottom: 0.5em;
 }
+
+/* Sub-Subtitle text (Section 5 "Prices" - Article1): Sub headline of each product title */
+.index-main--section5-text-sub-subtitle {
+  display: flex;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #000000;
+  margin-bottom: 2em;
+}
+
+/* Paragraph1 text (Section 5 "Prices" - Article1): Paragraph which decribes the product */
+.index-main--section5-text-paragraph1 {
+  display: flex;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1.8em;
+  color: #000000;
+  margin-bottom: 3em;
+}
+
+/* HR (Section 5 "Prices" - Article1): Separation Line */
+.index-main--section5-hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Paragraph2 text (Section 5 "Prices" - Article1): Paragraph which lists what the product receives */
+.index-main--section5-text-paragraph2 {
+  display: flex;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: #000000;
+  margin-top: 2em;
+}
+
+/* Paragraph2 text (Section 5 "Prices" - Article1) - Desktop/Responsive Design: Paragraph which lists what the product receives */ 
+@media only screen and (min-width: 720px) { 
+  .index-main--section5-text-paragraph2 {
+    position: relative;
+    left: 25%;
+  }
+}
+
+/* Paragraph3 text (Section 5 "Prices" - Article1): Paragraph which summarises the product */
+.index-main--section5-text-paragraph3 {
+  display: flex;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #000000;
+  margin-top: 2em;
+}
+
+/* Button (Section 5 "Buy a Website") */ 
+.index-main--section5-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  border-width: 0;
+  border-radius: 0.3em;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
+  width: 18em;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 12pt;
+  background-color: #81c784;
+  color: #ffffff;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+}
+
+/* Button (Section 5 "Buy a Website") - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .index-main--section5-button {
+    position: relative;
+    display: block;
+    top: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12pt;
+    background-color: #81c784;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Button (Section 5 "Buy a Website") - Hovered*/ 
+.index-main--section5-button:hover {
+  background-color: #519657;
+  transition: all 0.15s ease-in-out;
+}
+
 
 hr {
   border: 0.5px solid #265550;
@@ -517,8 +677,8 @@ hr {
   transition: all 0.15s ease-in-out;
 }
 
-/* Paragraph1 text (Section 6 "More"): "website created by Sean Leitch © 2019" */
-.index-main--section6-text-paragraph1 {
+/* Paragraph1 text (Footer): "website created by Sean Leitch © 2019" */
+.index-main--footer-text-paragraph1 {
   position: relative;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -527,14 +687,15 @@ hr {
   color: #000000;
   max-width: 1000px;
   transition: all 1.5s ease-in-out;
-  margin-top: 4em;
+  margin-top: 0em;
   margin-right: auto;
+  margin-bottom: 2em;
   margin-left: auto;
 }
 
-/* Paragraph1 text (Section 6 "More") - Mobile/Responsive Design */ 
+/* Paragraph1 text (Footer) - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .index-main--section6-text-paragraph1 {
+  .index-main--footer-text-paragraph1 {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
@@ -544,23 +705,3 @@ hr {
     transition: all 1.5s ease-in-out;
   }
 }
-
-@keyframes colorchange {
-  0%   {background: #0077c2;}
-  25%  {background: #7e57c2;}
-  45%  {background: #5c6bc0;}
-  65%  {background: #ab47bc;}
-  85% {background: #0069c0;}
-  100% {background: #0077c2;}
-}
-
-/* Safari and Chrome - necessary duplicate */
-@-webkit-keyframes colorchange {
-  0%   {background: #0077c2;}
-  25%  {background: #7e57c2;}
-  45%  {background: #5c6bc0;}
-  65%  {background: #ab47bc;}
-  85% {background: #0069c0;}
-  100% {background: #0077c2;}
-}
-

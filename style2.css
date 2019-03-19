@@ -173,6 +173,8 @@ main {
 /* Removes underline from links */
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Section 2 "get in contact" */

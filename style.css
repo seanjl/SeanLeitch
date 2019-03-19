@@ -195,8 +195,10 @@ a {
   .index-main--section1-button {
     position: relative;
     display: block;
-    left: 35%;
     top: 3em;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Roboto', sans-serif;
     color: ffffff;
     font-weight: 600;

@@ -1,0 +1,281 @@
+/* Sean Leitch, Snowblock Studios March 2019 */
+html {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  body {
+    width: 100%;
+    background-color: #ffffff;
+  }  
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  padding-bottom: 0em;
+  background-color: #ffffff;
+  box-shadow: 0 0px 3px 0px rgba(0,0,0,0.16), 0 0px 3px 0px rgba(0,0,0,0.23);
+  z-index: 10;
+
+}
+
+/* Title Text (Header Bar) */
+.page3-header-text-title {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 1.35em;
+    text-align: center;
+    color: #7e57c2;
+    user-select: none;
+}
+
+main {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+}
+
+/* Main - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  main {
+    position: relative;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: none;
+  }
+}
+
+/* Main - Desktop/Responsive Design */ 
+@media only screen and (min-width: 720px) { 
+  main {
+    position: relative;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: none;
+  }
+}
+
+/* Removes underline from links */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Title text (Section 1 "Buy") */
+.page3-main--section1-text-title {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #000000;
+  transition: all 1.5s ease-in-out;
+}
+
+/* Title text (Section 1 "Buy") - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page3-main--section1-text-title {
+    position: relative;
+    top: 10%;
+    left: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+  }
+}
+
+/* Image (Icons for each section) */
+.page3-main--icon-img {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Section 1 "Buy" */
+.page3-main-section1 {
+  position: relative;
+  top: 55px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #d7ffd9;
+}
+
+.page3-main--section1-form {
+  position: relative;
+  left: 5vw;
+  width: 90%;
+  height: 1480px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow-y: hidden;
+}
+
+.page3-main--section1-form2 {
+  position: relative;
+  left: 5vw;
+  width: 90%;
+  height: 1580px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow-y: hidden;
+}
+
+hr {
+  border: 0.5px solid #265550;
+  width: 85%;
+  margin-top: 3em;
+  margin-right: auto;
+  margin-bottom: 3.3em;
+  margin-left: auto;
+}
+
+/* Section 6 "More" */
+.page3-main-section6 {
+  position: relative;
+  top: -4px;
+  width: 100%;
+  margin: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #ecb2fe;
+  max-width: 1280px;
+}
+
+/* Title text (Section 6 "More") */
+.page3-main--section6-text-title {
+  position: relative;
+  top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #000000;
+  transition: all 1.5s ease-in-out;
+}
+
+/* Title text (Section 6 "More") - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page3-main--section6-text-title {
+    position: relative;
+    top: 10%;
+    left: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+  }
+}
+
+/* Button (Section 6 "More") */ 
+.page3-main--section6-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  border-width: 0;
+  border-radius: 0.3em;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
+  width: 12em;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 12pt;
+  background-color: #96457e;
+  color: #ffffff;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+}
+
+/* Button (Section 6 "More") - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page3-main--section6-button {
+    position: relative;
+    display: block;
+    top: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12pt;
+    background-color: #96457e;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Button (Section 6 "More") - Hovered*/ 
+.page3-main--section6-button:hover {
+  background-color: #4f2655;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Paragraph1 text (Footer): "website created by Sean Leitch © 2019" */
+.page3-main--footer-text-paragraph1 {
+  position: relative;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: #000000;
+  max-width: 1000px;
+  transition: all 1.5s ease-in-out;
+  margin-top: 0em;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+}
+
+/* Paragraph1 text (Footer) - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page3-main--footer-text-paragraph1 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+    transition: all 1.5s ease-in-out;
+  }
+}

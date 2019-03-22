@@ -138,6 +138,7 @@ main {
     text-align: center;
     text-shadow: 2px 2px 10px #000000;
     margin-right: 1em;
+    margin-left: 1em;
   }
 }
 
@@ -160,6 +161,9 @@ main {
   .index-main--section1-text-subtitle {
     position: relative;
     top: 10%;
+    left: 0;
+    margin-right: 1em;
+    margin-left: 1em;
     font-size: 1.5em;
     color: #ffffff;
     text-align: center;

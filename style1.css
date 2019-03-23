@@ -303,6 +303,48 @@ a {
   box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
 }
 
+/* Button (Section 2 "Who am i") */ 
+.page1-main--section2-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  border-width: 0;
+  border-radius: 0.3em;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
+  width: 12em;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 12pt;
+  background-color: #5b89a0;
+  color: #ffffff;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+}
+
+/* Button (Section 2 "Who am i") - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page1-main--section2-button {
+    position: relative;
+    display: block;
+    top: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12pt;
+    background-color: #5b89a0;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Button (Section 2 "Who am i") - Hovered*/ 
+.page1-main--section2-button:hover {
+  background-color: #315263;
+  transition: all 0.15s ease-in-out;
+}
 
 /* Section 6 "More" */
 .page1-main-section6 {

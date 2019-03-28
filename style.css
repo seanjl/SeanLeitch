@@ -425,7 +425,6 @@ a {
   margin: auto;
   margin-bottom: 2em;
   width: 90%;
-  height: 54em;
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -438,7 +437,6 @@ a {
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article1 {
     box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    height: 67em;
     width: 75%;
   }
 }
@@ -452,7 +450,6 @@ a {
   margin: auto;
   margin-bottom: 2em;
   width: 90%;
-  height: 60em;
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -465,7 +462,6 @@ a {
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article2 {
     box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    height: 80em;
     width: 75%;
   }
 }

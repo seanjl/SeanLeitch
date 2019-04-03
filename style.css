@@ -1,4 +1,5 @@
 /* Sean Leitch, Snowblock Studios March 2019 */
+
 html {
   padding: 0;
   margin: 0;
@@ -17,7 +18,7 @@ body {
 @media only screen and (max-width: 720px) { 
   body {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
   }  
 }
 
@@ -51,7 +52,7 @@ main {
   margin-left: auto;
   margin-top: -20px;
   margin-bottom: 0px;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 /* Main - Mobile/Responsive Design */ 

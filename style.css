@@ -39,11 +39,16 @@ header {
 .index-header-text-title {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.35em;
     text-align: center;
     color: #7e57c2;
     user-select: none;
+}
+
+/* Title Text [Only "sean"] (Header Bar) */
+.index-header-text-title--sean {
+  color: #000000;
 }
 
 main {

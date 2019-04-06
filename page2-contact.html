@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- Sean Leitch - Snowblock Studios 2019 -->
-<!-- This is the About Me Page -->
+<!-- This is the Contact Me Page -->
 
 <html>
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">">
-        <link href="style1.css" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
         <link href="aos/aos.css" rel="stylesheet">
@@ -15,41 +15,62 @@
 
     <body>
         <header>
-            <a href="#section6"><h1 class="page1-header-text-title"><span class="page1-header-text-title--sean">sean</span>leitch</h1></a>
+            <a href="#section6"><h1 class="page2-header-text-title"><span class="page2-header-text-title--sean">sean</span>leitch</h1></a>
         </header>
         <main>
-            <section class="page1-main-section1" id="section1" data-aos="flip-left"> <!-- Section 1 "Introduction"-->
-                <h1 class="page1-main--section1-text-title" data-aos="fade-down" data-aos-duration="1100">about me</h1> 
+            <section class="page2-main-section1" id="section1"  data-aos="flip-left"> <!-- Section 1 "Introduction"-->
+                <h1 class="page2-main--section1-text-title" data-aos="flip-down" data-aos-duration="1100">contact</h1> 
             </section>
 
-            <section class="page1-main-section2" data-aos="flip-right"> <!-- Section 2 "Who am I"-->
-                <img class="page1-main--icon-img" src="assets/page1-WAI.svg" data-aos="flip-right" data-aos-duration="1500">
-                <h1 class="page1-main--section2-text-title" data-aos="flip-right" data-aos-duration="1500">who am I? </h1> 
-                <p class="page1-main--section2-text-paragraph1">My name is Sean Leitch. I was born in 2000. I'm fluent in both English and Spanish</p> 
-                <p class="page1-main--section2-text-paragraph1">I'm the founder of web design agency, Snowblock Studios.</p> 
-                <a href="https://seanjl.github.io/Snowblock/"><button class="page1-main--section2-button">SNOWBLOCK</button></a>  
-                <p class="page1-main--section2-text-paragraph1">I like creating things which I can see later, like websites, videos, podcasts, etc</p>
-                <p class="page1-main--section2-text-paragraph1">I'm constantly learning new things, reading and practicing my skills</p>
-                <p class="page1-main--section2-text-paragraph1">I strive to be the best version of my self by trying stuff I'm bad at and keeping at it, making reports and analyzing them</p> 
-                <p class="page1-main--section2-text-paragraph1">My interests include web development, image/video editing, personal development, politics and hip-hop</p>  
-                <img class="page1-main--section2-img" src="assets/page1-section2-img.jpg">
-                <p class="page1-main--section2-text-paragraph1">Right now I'm studying at school, self-learning web dev, freelancing webdev projects, and planning a YouTube Channel and an app</p>  
-                <p class="page1-main--section2-text-paragraph1">On the YouTube channel I'm gonna upload personal development videos, showcase webdev projects, and start a podcast about current affairs and my personal opinions</p>  
-                <p class="page1-main--section2-text-paragraph1">The app is an update to an app I made last year called WaveFlow, which was a feed of hip-hop news and songs. The updated version will feature a full redesign</p>  
+            <section class="page2-main-section2" data-aos="flip-right"> <!-- Section 2 "get in contact"-->
+                <img class="page2-main--icon-img" src="assets/page2-contact.svg" data-aos="flip-right" data-aos-duration="1500">
+                <h1 class="page2-main--section2-text-title" data-aos="flip-left" data-aos-duration="1500">get in contact</h1> 
+
+                <div class="page2-main-section2-container" data-aos="flip-right" data-aos-duration="1000"> <!-- Flex Container for each article-->
+                    <article class="page2-main-section2-container-article1">
+                        <a class="page2-main-section2-container-article1-button" href="mailto:sean.leitch@outlook.com?Subject=Contact from Website" target="_top" data-aos="zoom-in" data-aos-duration="1200">  <!-- "Email-->
+                            <button class="page2-main--section2-button">
+                                <img class="page2-main--section2-contact-img" src="assets/page2-mail.svg">
+                                <p class="page2-main--section2-text-paragraph1">Email</p>
+                            </button>
+                        </a>
+
+                        <a class="page2-main-section2-container-article1-button" href="https://github.com/seanjl" target="_top" data-aos="zoom-in" data-aos-duration="1200">  <!-- "Github-->
+                                <button class="page2-main--section2-button">
+                                    <img class="page2-main--section2-contact-img" src="assets/page2-github.svg">
+                                    <p class="page2-main--section2-text-paragraph1">Github</p>
+                                </button>
+                        </a>
+
+                        <a class="page2-main-section2-container-article1-button" href="https://instagram.com/seanjleitch" target="_top" data-aos="zoom-in" data-aos-duration="1200">  <!-- "Instagram-->
+                            <button class="page2-main--section2-button">
+                                <img class="page2-main--section2-contact-img" src="assets/page2-instagram.svg">
+                                <p class="page2-main--section2-text-paragraph1">Instagram</p>
+                            </button>
+                        </a>
+
+                        <a class="page2-main-section2-container-article1-button" href="https://youtube.com/seanjleitch" target="_top" data-aos="zoom-in" data-aos-duration="1200">  <!-- "YouTube-->
+                            <button class="page2-main--section2-button">
+                                <img class="page2-main--section2-contact-img" src="assets/page2-youtube.svg">
+                                <p class="page2-main--section2-text-paragraph1">YouTube</p>
+                            </button>
+                        </a>
+                    </article>
+                </div>
             </section>
             
-            <section class="page1-main-section6" id="section6" data-aos="fade-up"> <!-- Section 6 "More" -->
-                <img class="page1-main--icon-img" src="assets/index-more.svg" data-aos="flip-right" data-aos-duration="1500">
-                <h1 class="page1-main--section6-text-title" data-aos="flip-left" data-aos-duration="1500">More</h1>
-                <a href="index.html"><button class="page1-main--section6-button">HOME</button></a>
-                <a href="#section1"><button class="page1-main--section6-button">ABOUT</button></a>
-                <a href="page2-contact.html"><button class="page1-main--section6-button">CONTACT</button></a>
-                <a href="https://seanjl.github.io/SeanLeitchBlog/"><button class="page1-main--section6-button">BLOG</button></a>
+            <section class="page2-main-section6" id="section6" data-aos="fade-up"> <!-- Section 6 "More" -->
+                <img class="page2-main--icon-img" src="assets/index-more.svg" data-aos="flip-right" data-aos-duration="1500">
+                <h1 class="page2-main--section6-text-title" data-aos="flip-left" data-aos-duration="1500">More</h1>
+                <a href="index.html"><button class="page2-main--section6-button">HOME</button></a>
+                <a href="page1-aboutme.html"><button class="page2-main--section6-button">ABOUT</button></a>
+                <a href="#section1"><button class="page2-main--section6-button">CONTACT</button></a>
+                <a href="https://seanjl.github.io/SeanLeitchBlog/"><button class="page2-main--section6-button">BLOG</button></a>
             </section>
         </main>
 
-        <p class="page1-main--footer-text-paragraph1">website created by sean leitch © 2019</p>
-
+        <p class="page2-main--footer-text-paragraph1">website created by sean leitch © 2019</p>
+        
         <!-- Scroll Animation Script-->
         <script src="aos/aos.js"></script>
         <script  type="text/javascript">

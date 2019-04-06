@@ -19,7 +19,7 @@ body {
 @media only screen and (max-width: 720px) { 
   body {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
   }  
 }
 
@@ -40,11 +40,16 @@ header {
 .page1-header-text-title {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.35em;
     text-align: center;
     color: #7e57c2;
     user-select: none;
+}
+
+/* Title Text [Only "sean"] (Header Bar) */
+.page1-header-text-title--sean {
+  color: #000000;
 }
 
 main {
@@ -53,7 +58,7 @@ main {
   margin-left: auto;
   margin-top: -20px;
   margin-bottom: 0px;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 /* Main - Mobile/Responsive Design */ 

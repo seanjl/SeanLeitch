@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Sean Leitch - Snowblock Studios 2018 -->
+<!-- Sean Leitch - Snowblock Studios 2019 -->
 <!-- This is the About Me Page -->
 
 <html>
@@ -9,21 +9,22 @@
         <link href="style1.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <link href="aos/aos.css" rel="stylesheet">
         <title>Sean Leitch</title>
     </head>
 
     <body>
         <header>
-            <a href="index.html"><h1 class="page1-header-text-title">sean leitch</h1></a>
+            <a href="#section6"><h1 class="page1-header-text-title"><span class="page1-header-text-title--sean">sean</span>leitch</h1></a>
         </header>
         <main>
-            <section class="page1-main-section1" id="section1" > <!-- Section 1 "Introduction"-->
-                <h1 class="page1-main--section1-text-title">about me</h1> 
+            <section class="page1-main-section1" id="section1" data-aos="flip-left"> <!-- Section 1 "Introduction"-->
+                <h1 class="page1-main--section1-text-title" data-aos="fade-down" data-aos-duration="1100">about me</h1> 
             </section>
 
-            <section class="page1-main-section2"> <!-- Section 2 "Who am I"-->
-                <img class="page1-main--icon-img" src="assets/page1-WAI.svg">
-                <h1 class="page1-main--section2-text-title">who am I?</h1> 
+            <section class="page1-main-section2" data-aos="flip-right"> <!-- Section 2 "Who am I"-->
+                <img class="page1-main--icon-img" src="assets/page1-WAI.svg" data-aos="flip-right" data-aos-duration="1500">
+                <h1 class="page1-main--section2-text-title" data-aos="flip-right" data-aos-duration="1500">who am I? </h1> 
                 <p class="page1-main--section2-text-paragraph1">My name is Sean Leitch. I was born in 2000. I'm fluent in both English and Spanish</p> 
                 <p class="page1-main--section2-text-paragraph1">I'm the founder of web design agency, Snowblock Studios.</p> 
                 <a href="https://seanjl.github.io/Snowblock/"><button class="page1-main--section2-button">SNOWBLOCK</button></a>  
@@ -37,9 +38,9 @@
                 <p class="page1-main--section2-text-paragraph1">The app is an update to an app I made last year called WaveFlow, which was a feed of hip-hop news and songs. The updated version will feature a full redesign</p>  
             </section>
             
-            <section class="page1-main-section6"> <!-- Section 6 "More" -->
-                <img class="page1-main--icon-img" src="assets/index-more.svg">
-                <h1 class="page1-main--section6-text-title">More</h1>
+            <section class="page1-main-section6" id="section6" data-aos="fade-up"> <!-- Section 6 "More" -->
+                <img class="page1-main--icon-img" src="assets/index-more.svg" data-aos="flip-right" data-aos-duration="1500">
+                <h1 class="page1-main--section6-text-title" data-aos="flip-left" data-aos-duration="1500">More</h1>
                 <a href="index.html"><button class="page1-main--section6-button">HOME</button></a>
                 <a href="#section1"><button class="page1-main--section6-button">ABOUT</button></a>
                 <a href="page2-contact.html"><button class="page1-main--section6-button">CONTACT</button></a>
@@ -48,5 +49,14 @@
         </main>
 
         <p class="page1-main--footer-text-paragraph1">website created by sean leitch © 2019</p>
+
+        <!-- Scroll Animation Script-->
+        <script src="aos/aos.js"></script>
+        <script  type="text/javascript">
+            AOS.init({
+                duration: 600,
+            });
+        </script>
+
     </body>
 </html>

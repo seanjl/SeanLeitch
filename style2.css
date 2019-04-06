@@ -1,4 +1,6 @@
 /* Sean Leitch, Snowblock Studios March 2019 */
+/* This is the style css for the about me page */
+
 html {
   padding: 0;
   margin: 0;
@@ -35,7 +37,7 @@ header {
 }
 
 /* Title Text (Header Bar) */
-.page4-header-text-title {
+.page2-header-text-title {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -46,7 +48,7 @@ header {
 }
 
 /* Title Text [Only "sean"] (Header Bar) */
-.page4-header-text-title--sean {
+.page2-header-text-title--sean {
   color: #000000;
 }
 
@@ -84,6 +86,95 @@ main {
   }
 }
 
+/* Section 1 "Introduction" */
+.page2-main-section1 { 
+  position: relative;
+  top: 1em;
+  width: 100%;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  margin-top: none;
+}
+
+/* Section 1 "Introduction" - Desktop/Responsive Design */ 
+@media only screen and (min-width: 720px) { 
+  .page2-main-section1 {
+    background-image: url("assets/page2-section1-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+}
+
+/* Section 1 "Introduction" - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page2-main-section1 {
+    background-image: url("assets/page2-section1-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top; 
+  }
+}
+
+/* Title text (Section 1 "Introduction") */
+.page2-main--section1-text-title {
+  position: relative;
+  top: 30%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #000000;
+  margin-right: 1em;
+  transition: all 1.25s ease-in-out;
+}
+
+/* Title text (Section 1 "Introduction")  Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page2-main--section1-text-title {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 10px #000000;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+/* Subtitle text (Section 1 "Introduction"): "I'm a front end developer" */
+.page2-main--section1-text-subtitle {
+  position: relative;
+  top: 2em;
+  left: 10%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #000000;
+  margin-right: 1em;
+  transition: all 1.5s ease-in-out;
+}
+
+/* Subtitle text (Section 1 "Introduction")  Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page2-main--section1-text-subtitle {
+    position: relative;
+    top: 10%;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+  }
+}
+
 /* Removes underline from links */
 a {
   text-decoration: none;
@@ -91,8 +182,90 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Title text (Section 1 "Portfolio") */
-.page4-main--section1-text-title {
+/* Section 2 "get in contact" */
+.page2-main-section2 {
+  position: relative;
+  top: -4px;
+  width: 100%;
+  margin: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #f3ffbc;
+}
+
+/* Section 2 "get in contact" - Container: used as a flex container for the different product articles*/
+.page2-main-section2-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: none;
+}
+
+/* Section 2 "get in contact" - Article1 "Basic Site" */
+.page2-main-section2-container-article1 {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 12pt;
+  margin: auto;
+  width: 90%;
+  padding-top: 2em;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
+}
+
+/* Section 2 "get in contact" - Article1 - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page2-main-section2-container-article1 {
+    box-shadow: none;
+    width: 75%;
+    background-color: #f3ffbc;
+  }
+}
+
+/* Section 2 "get in contact" - Article1-Button */
+.page2-main-section2-container-article1-button {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+/* Section 2 "get in contact" - Article1-Button - Mobile/Responsive Design */ 
+@media only screen and (max-width: 720px) { 
+  .page2-main-section2-container-article1-button {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+/* Image (Icons for each section) */
+.page2-main--icon-img {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Contact Image (Icons for each section) */
+.page2-main--section2-contact-img {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  padding: 1em;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Title text (Section 2 "get in contact") */
+.page2-main--section2-text-title {
   position: relative;
   top: 10%;
   left: 10%;
@@ -103,9 +276,9 @@ a {
   transition: all 1.5s ease-in-out;
 }
 
-/* Title text (Section 1 "Portfolio") - Mobile/Responsive Design */ 
+/* Title text (Section 2 "get in contact") - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--section1-text-title {
+  .page2-main--section2-text-title {
     position: relative;
     top: 10%;
     left: 0%;
@@ -117,94 +290,48 @@ a {
   }
 }
 
-/* Paragraph1 text (Section 1 "Portfolio") */
-.page4-main--section1-text-paragraph1 {
+/* Paragraph1 text (Section 2 "get in contact") */
+.page2-main--section2-text-paragraph1 {
   position: relative;
   top: 10%;
-  left: 15%;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 1.8em;
   color: #000000;
-  margin-right: 3em;
+  margin: auto;
   max-width: 1000px;
   transition: all 1.5s ease-in-out;
 }
 
-/* Paragraph1 text (Section 1 "Portfolio") - Mobile/Responsive Design */ 
+/* Paragraph1 text (Section 2 "get in contact") - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--section1-text-paragraph1 {
+  .page2-main--section2-text-paragraph1 {
     position: relative;
     top: 10%;
-    left: 10%;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 1.8em;
     color: #000000;
-    margin-right: 3em;
+    margin: auto;
     transition: all 1.5s ease-in-out;
   }
 }
 
-/* Subtitle text (Section 1 "Portfolio") */
-.page4-main--section1-text-subtitle {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  color: #000000;
-  transition: all 1.5s ease-in-out;
-}
-
-/* Image (Icons for each section) */
-.page4-main--icon-img {
+/* Image (Section 2 "Who Am I")*/
+.page2-main--section2-img {
   display: block;
   position: relative;
-  width: 58px;
-  height: 58px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   transition: all 0.15s ease-in-out;
-}
-
-/* Section 1 "Portfolio" */
-.page4-main-section1 {
-  position: relative;
-  top: 55px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 1em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #b2fef7;
-}
-
-/* Image1 (Section 1 "Portfolio") */ 
-.page4-main--section4-img1 {
-  position: relative;
-  display: block;
-  max-width: 30%;
   box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-  margin: auto;
-  margin-bottom: 2em;
 }
 
-/* Image1 (Section 1 "Portfolio") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .page4-main--section4-img1 {
-  position: relative;
-  display: block;
-  max-width: 90%;
-  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-  margin: auto;
-  margin-bottom: 2em;
-  }
-}
-
-/* Button (Section 1 "Portfolio") */ 
-.page4-main--section4-button {
+/* Button (Section 2 "get in contact") */ 
+.page2-main--section2-button {
   position: relative;
   display: block;
   padding: 1em;
@@ -216,16 +343,16 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12pt;
-  background-color: #45968e;
+  background-color: #e6ee9c;
   color: #ffffff;
   margin-right: auto;
   margin-bottom: 2em;
   margin-left: auto;
 }
 
-/* Button (Section 1 "Portfolio") - Mobile/Responsive Design */ 
+/* Button (Section 2 "get in contact") - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--section4-button {
+  .page2-main--section2-button {
     position: relative;
     display: block;
     top: 10%;
@@ -233,30 +360,22 @@ a {
     color: #ffffff;
     font-weight: 600;
     font-size: 12pt;
-    background-color: #45968e;
+    background-color: #e6ee9c;
     margin-bottom: 2em;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-/* Button (Section 1 "Portfolio") - Hovered*/ 
-.page4-main--section4-button:hover {
-  background-color: #265550;
-  transition: all 0.15s ease-in-out;
-}
-
-hr {
-  border: 0.5px solid #265550;
-  width: 85%;
-  margin-top: 3em;
-  margin-right: auto;
-  margin-bottom: 3.3em;
-  margin-left: auto;
+/* Button (Section 2 "get in contact") - Hovered*/ 
+.page2-main--section2-button:hover {
+  background-color: #b3bc6d;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Section 6 "More" */
-.page4-main-section6 {
+.page2-main-section6 {
   position: relative;
   top: -4px;
   width: 100%;
@@ -268,7 +387,7 @@ hr {
 }
 
 /* Title text (Section 6 "More") */
-.page4-main--section6-text-title {
+.page2-main--section6-text-title {
   position: relative;
   top: 10%;
   margin-right: auto;
@@ -283,7 +402,7 @@ hr {
 
 /* Title text (Section 6 "More") - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--section6-text-title {
+  .page2-main--section6-text-title {
     position: relative;
     top: 10%;
     left: 0%;
@@ -296,7 +415,7 @@ hr {
 }
 
 /* Button (Section 6 "More") */ 
-.page4-main--section6-button {
+.page2-main--section6-button {
   position: relative;
   display: block;
   padding: 1em;
@@ -317,7 +436,7 @@ hr {
 
 /* Button (Section 6 "More") - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--section6-button {
+  .page2-main--section6-button {
     position: relative;
     display: block;
     top: 10%;
@@ -333,13 +452,13 @@ hr {
 }
 
 /* Button (Section 6 "More") - Hovered*/ 
-.page4-main--section6-button:hover {
+.page2-main--section6-button:hover {
   background-color: #4f2655;
   transition: all 0.15s ease-in-out;
 }
 
 /* Paragraph1 text (Footer): "website created by Sean Leitch © 2019" */
-.page4-main--footer-text-paragraph1 {
+.page2-main--footer-text-paragraph1 {
   position: relative;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -356,7 +475,7 @@ hr {
 
 /* Paragraph1 text (Footer) - Mobile/Responsive Design */ 
 @media only screen and (max-width: 720px) { 
-  .page4-main--footer-text-paragraph1 {
+  .page2-main--footer-text-paragraph1 {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;

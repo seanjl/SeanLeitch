@@ -8,42 +8,52 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
         <link rel="icon" href="assets/favicon.gif" type="image/gif" sizes="16x16">
+        <link href="aos/aos.css" rel="stylesheet">
         <title>Sean Leitch</title>
     </head>
 
     <body>
         <header>
-            <a href="index.html"><h1 class="page4-header-text-title">sean leitch</h1></a>
+            <a href="#section6"><h1 class="page4-header-text-title"><span class="page4-header-text-title--sean">sean</span>leitch</h1></a>
         </header>
         <main>
-            <section class="page4-main-section1" id="prices"> <!-- Section 1 "Portfolio" -->
-                <img class="page4-main--icon-img" src="assets/index-portfolio.svg">
-                <h1 class="page4-main--section1-text-title">portfolio</h1>
+            <section class="page4-main-section1" id="prices" data-aos="flip-left"> <!-- Section 1 "Portfolio" -->
+                <img class="page4-main--icon-img" src="assets/index-portfolio.svg" data-aos="flip-right" data-aos-duration="1100">
+                <h1 class="page4-main--section1-text-title" data-aos="flip-left" data-aos-duration="1500">portfolio</h1>
                 <hr>
                     <!-- Sean Leich Blog Reformas -->
-                    <h2 class="page4-main--section1-text-subtitle">- Sean Leitch Blog</h2>  
+                    <h2 class="page4-main--section1-text-subtitle" data-aos="flip-left" data-aos-duration="1200">- Sean Leitch Blog</h2>  
                     <p class="page4-main--section1-text-paragraph1">My personal blog about web development and self-improvement</p> 
                     <img class="page4-main--section4-img1" src="assets/portfolio-project2.jpg"> 
                     <a href="https://seanjl.github.io/SeanLeitchBlog/" ><button class="page4-main--section4-button">SEE THIS PROJECT</button></a>
                 <hr>
                     <!-- Vandersur Reformas -->
-                    <h2 class="page4-main--section1-text-subtitle">- Vandersur Reformas</h2>  
+                    <h2 class="page4-main--section1-text-subtitle" data-aos="flip-left" data-aos-duration="1500">- Vandersur Reformas</h2>  
                     <p class="page4-main--section1-text-paragraph1">A business and portfolio site for a construction company based in Spain</p> 
                     <img class="page4-main--section4-img1" src="assets/index-section4-project1.jpg"> 
                     <a href="https://www.vandersurreformas.com/" ><button class="page4-main--section4-button">SEE THIS PROJECT</button></a>
                 <hr>
             </section>
 
-            <section class="page4-main-section6"> <!-- Section 6 "More" -->
-                <img class="page4-main--icon-img" src="assets/index-more.svg">
-                <h1 class="page4-main--section6-text-title">more</h1>
+            <section class="page4-main-section6" data-aos="fade-up"> <!-- Section 6 "More" -->
+                <img class="page4-main--icon-img" src="assets/index-more.svg" data-aos="flip-right" data-aos-duration="1500">
+                <h1 class="page4-main--section6-text-title" data-aos="flip-left" data-aos-duration="1200">more</h1>
                 <a href="index.html"><button class="page4-main--section6-button">HOME</button></a>
-                <a href="page1-aboutme.html"><button class="page4-main--section6-button">ABOUT</button></a>
+                <a href="page1-aboutme.html"><button class="page4-main--section6-button">ABOUT ME</button></a>
                 <a href="page2-contact.html"><button class="page4-main--section6-button">CONTACT</button></a>
                 <a href="https://seanjl.github.io/SeanLeitchBlog/"><button class="page4-main--section6-button">BLOG</button></a>
             </section>
         </main>
 
         <p class="page4-main--footer-text-paragraph1">website created by sean leitch © 2019</p>
+        
+        <!-- Scroll Animation Script-->
+        <script src="aos/aos.js"></script>
+        <script  type="text/javascript">
+            AOS.init({
+                duration: 600,
+            });
+        </script>
+
     </body>
 </html>

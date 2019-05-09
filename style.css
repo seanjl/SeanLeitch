@@ -1,4 +1,5 @@
 /* Sean Leitch, Snowblock Studios March 2019 */
+
 html {
   padding: 0;
   margin: 0;
@@ -38,11 +39,16 @@ header {
 .index-header-text-title {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.35em;
     text-align: center;
-    color: #6AB344;
+    color: #7e57c2;
     user-select: none;
+}
+
+/* Title Text [Only "sean"] (Header Bar) */
+.index-header-text-title--sean {
+  color: #000000;
 }
 
 main {
@@ -82,9 +88,11 @@ main {
 /* Section 1 "Introduction" */
 .index-main-section1 { 
   position: relative;
+  top: 1em;
   width: 100%;
-  height: 720px;
+  height: 370px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center; 
   margin-top: none;
 }
@@ -94,8 +102,9 @@ main {
   .index-main-section1 {
     background-image: url("assets/index-section1-bg.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center; 
-    margin-bottom: -12em;
+    margin-bottom: -4em;
   }
 }
 
@@ -106,8 +115,6 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top; 
-    height: 550px;
-    top: 1em;
     margin-bottom: -8em;
   }
 }
@@ -134,7 +141,7 @@ main {
     left: 0%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 2.6em;
+    font-size: 3em;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px 10px #000000;
@@ -143,10 +150,10 @@ main {
   }
 }
 
-/* Subtitle text (Section 1 "Introduction"): "Get your idea online" */
+/* Subtitle text (Section 1 "Introduction"): "I'm a front end developer" */
 .index-main--section1-text-subtitle {
   position: relative;
-  top: 5em;
+  top: 2em;
   left: 10%;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
@@ -161,9 +168,8 @@ main {
 @media only screen and (max-width: 720px) { 
   .index-main--section1-text-subtitle {
     position: relative;
-    top: 3em;
-    left: 0%;
-    margin-top: 2em;
+    top: 10%;
+    left: 0;
     margin-right: 1em;
     margin-left: 1em;
     font-size: 1.5em;
@@ -183,7 +189,7 @@ a {
 /* Button (Section 1 "Introduction")*/ 
 .index-main--section1-button {
   position: relative;
-  top: 9em;
+  top: -3em;
   left: 70%;
   padding: 1em;
   border-width: 0;
@@ -194,7 +200,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12pt;
-  background-color: #589b5c;
+  background-color: #c75192;
   color: #ffffff;
 }
 
@@ -203,7 +209,7 @@ a {
   .index-main--section1-button {
     position: relative;
     display: block;
-    top: 7em;
+    top: 3em;
     left: 0;
     margin-right: auto;
     margin-left: auto;
@@ -211,26 +217,26 @@ a {
     color: ffffff;
     font-weight: 600;
     font-size: 12pt;
-    background-color: #589b5c;
+    background-color: #c75192;
   }
 }
 
 /* Button (Section 1 "Introduction") - Hovered*/ 
 .index-main--section1-button:hover {
-  background-color: #3c6d40;
+  background-color: #be3f85;
   transition: all 0.15s ease-in-out;
 }
 
-/* Section 2 "What We Do" */
+/* Section 2 "What I Do" */
 .index-main-section2 {
   position: relative;
   top: -4px;
   width: 95%;
   margin: auto;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: #a9ffbf;
+  background-color: #ffc1e3;
   border-radius: 0.4em;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -281,7 +287,7 @@ a {
   font-size: 1.8em;
   color: #000000;
   margin-right: 3em;
-  max-width: 75%;
+  max-width: 1000px;
   transition: all 1.5s ease-in-out;
 }
 
@@ -298,6 +304,20 @@ a {
     margin-right: 3em;
     transition: all 1.5s ease-in-out;
   }
+}
+
+/* Section 3 "My Skills" */
+.index-main-section3 {
+  position: relative;
+  top: -4px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #ffcdd2;
+  border-radius: 0.4em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /* Subtitle text (Section 3 "My Skills") */
@@ -318,7 +338,7 @@ a {
   top: -4px;
   width: 95%;
   margin: auto;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #b2fef7;
@@ -362,7 +382,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12pt;
-  background-color: #3e9ba1;
+  background-color: #45968e;
   color: #ffffff;
   margin-right: auto;
   margin-bottom: 2em;
@@ -379,7 +399,7 @@ a {
     color: #ffffff;
     font-weight: 600;
     font-size: 12pt;
-    background-color: #3e9ba1;
+    background-color: #45968e;
     margin-bottom: 2em;
     margin-right: auto;
     margin-left: auto;
@@ -388,7 +408,7 @@ a {
 
 /* Button (Section 4 "Portfolio") - Hovered*/ 
 .index-main--section4-button:hover {
-  background-color: #28676b;
+  background-color: #265550;
   transition: all 0.15s ease-in-out;
 }
 
@@ -398,12 +418,12 @@ a {
   top: -4px;
   width: 95%;
   margin: auto;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #d7ffd9;
   border-radius: 0.4em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
 }
 
 /* Section 5 "Prices" - Container: used as a flex container for the different product articles*/
@@ -425,7 +445,6 @@ a {
   margin: auto;
   margin-bottom: 2em;
   width: 90%;
-  height: 54em;
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -438,7 +457,6 @@ a {
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article1 {
     box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    height: 67em;
     width: 75%;
   }
 }
@@ -452,7 +470,6 @@ a {
   margin: auto;
   margin-bottom: 2em;
   width: 90%;
-  height: 60em;
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -465,7 +482,6 @@ a {
 @media only screen and (max-width: 720px) { 
   .index-main-section5-container-article2 {
     box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    height: 80em;
     width: 75%;
   }
 }
@@ -563,7 +579,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12pt;
-  background-color: #589b5c;
+  background-color: #81c784;
   color: #ffffff;
   margin-top: 2em;
   margin-right: auto;
@@ -581,7 +597,7 @@ a {
     color: #ffffff;
     font-weight: 600;
     font-size: 12pt;
-    background-color: #589b5c;
+    background-color: #81c784;
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
@@ -590,7 +606,7 @@ a {
 
 /* Button (Section 5 "Buy a Website") - Hovered*/ 
 .index-main--section5-button:hover {
-  background-color: #3c6d40;
+  background-color: #519657;
   transition: all 0.15s ease-in-out;
 }
 
@@ -612,7 +628,7 @@ hr {
   margin: none;
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: #7dd1eb;
+  background-color: #ecb2fe;
   max-width: 1280px;
 }
 
@@ -657,7 +673,7 @@ hr {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 12pt;
-  background-color: #4893aa;
+  background-color: #96457e;
   color: #ffffff;
   margin-right: auto;
   margin-bottom: 2em;
@@ -674,7 +690,7 @@ hr {
     color: #ffffff;
     font-weight: 600;
     font-size: 12pt;
-    background-color: #4893aa;
+    background-color: #96457e;
     margin-bottom: 2em;
     margin-right: auto;
     margin-left: auto;
@@ -683,7 +699,7 @@ hr {
 
 /* Button (Section 6 "More") - Hovered*/ 
 .index-main--section6-button:hover {
-  background-color: #306170;
+  background-color: #4f2655;
   transition: all 0.15s ease-in-out;
 }
 

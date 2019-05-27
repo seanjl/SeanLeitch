@@ -181,6 +181,20 @@ a {
   background-color: #b2fef7;
 }
 
+/* Section1 Article1 "Each project's card" */
+.page4-main-section1-article1 {
+  position: relative;
+  top: -4px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #e2fffc;
+  border-radius: 0.4em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
 /* Image1 (Section 1 "Portfolio") */ 
 .page4-main--section4-img1 {
   position: relative;

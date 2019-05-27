@@ -1,5 +1,5 @@
 /* Sean Leitch, Snowblock Studios March 2019 */
-/* This is the style css for the about me page */
+/* This is the style css for the contact page */
 
 html {
   padding: 0;
@@ -185,12 +185,15 @@ a {
 /* Section 2 "get in contact" */
 .page2-main-section2 {
   position: relative;
-  top: -4px;
-  width: 100%;
-  margin: none;
+  top: 0em;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 2em;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #f3ffbc;
+  border-radius: 0.4em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /* Section 2 "get in contact" - Container: used as a flex container for the different product articles*/

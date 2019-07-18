@@ -1,6 +1,2 @@
-# SeanLeitch
-This is my personal website and portfolio.
-I made it in VS Code, using HTML, CSS and JS. 
-
-Libraries used:
-  - AOS: CSS Scroll Animations
+# SeanLeitchBlog
+This is my blog where I talk about personal &amp; web development

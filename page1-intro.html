@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- sean leitch Website/page1 intro - Sean Leitch - Snowblock Studios 2019 -->
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link href="aos/aos.css" rel="stylesheet">
+        <link rel="icon" href="assets/favicon.gif" type="image/gif" sizes="16x16">
+        <title>Introduction</title>
+    </head>
+
+    <body>
+
+        <!-- Top Header, with "sean leitch" text. Clicking on it scrolls to the top -->
+        <header>
+            <a href="index.html"><img class="index-header-nav-img" src="assets/nav-back.svg"></a>
+            <a href="#main"><h1 class="index-header-text-title">sean leitch</h1></a>
+        </header>
+
+        <!-- Main Container-->
+        <main id="main" data-aos="slide-up" data-aos-duration="400">
+            <!-- Articles (Cards) inside a "a" element. Each card contains a quote -->
+
+            <!-- Article: "Introduction" -->
+            <article class="index-main-articleWhiteNH">
+                <h2>Sean Jamie Leitch</h2>
+                <p class="left-text">I'm a front-end web developer and student at the European University of Madrid. I enjoy designing and developing websites and I run my own business, <a href="http://bit.ly/Snowblock">Snowblock Studios</a>.</p>
+            </article>
+
+        <!-- Scroll Animation Script-->
+        <script src="aos/aos.js"></script>
+        <script  type="text/javascript">
+            AOS.init({
+                duration: 900,
+            });
+        </script>
+    </body>
+</html>

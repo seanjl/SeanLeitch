@@ -1,182 +1,139 @@
-/* Sean Leitch, Snowblock Studios March 2019 */
+/* SNOWBLOCK WEBSITE, Written by Sean Leitch for Snowblock Studios */
+/* LAST UPDATED: 10-JUL-2019 */
+/* FIRST WRITTEN: 10-JUL-2019 */
 
 html {
   padding: 0;
   margin: 0;
+
   overflow-y: scroll;
   overflow-x: hidden;
+
   scroll-behavior: smooth;
+
+	background: linear-gradient(-45deg, #efcbfd, #d9b6f5, #a0b9e7, #ebaedc);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+  width: 100%;
+  max-width: 414px;
+}
+
+/* HTML BG Animations */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* HTML BG Animations */
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* HTML BG Animations */
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Html (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  html {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 body {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
+  max-width: 414px;
+  background: transparent;
 }
 
-/* Body - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
+/* Body (Above 1024px) */
+@media only screen and (min-width: 1024px) {
   body {
     width: 100%;
-    background-color: #ffffff;
-  }  
+    max-width: 1024px;
+
+    margin: auto;
+  }
 }
 
+/* Header and top bar */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 3.5em;
-  padding-bottom: 0em;
-  background-color: #ffffff;
-  box-shadow: 0 0px 3px 0px rgba(0,0,0,0.16), 0 0px 3px 0px rgba(0,0,0,0.23);
   z-index: 10;
 
+  width: 100%;
+  height: 3.7em;
+
+  padding: 0em;
+
+  background: #673ab7;
+  box-shadow: 0 0px 3px 0px rgba(0,0,0,0.16), 0 0px 3px 0px rgba(0,0,0,0.23);
+
+}
+
+/* Top Bar -> IMG/Nav Back */
+.index-header-nav-img {
+  position: relative;
+  display: inline-block;
+  height: 1.5em;
+  left: 3%;
+  transition: 0.2s;
+}
+
+/* Top Bar -> IMG/Nav Back: HOVEREDS */
+.index-header-nav-img:hover {
+  transform: scale(1.25);
 }
 
 /* Title Text (Header Bar) */
 .index-header-text-title {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.35em;
-    text-align: center;
-    color: #7e57c2;
-    user-select: none;
-}
-
-/* Title Text [Only "sean"] (Header Bar) */
-.index-header-text-title--sean {
-  color: #000000;
-}
-
-main {
-  position: absolute;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -20px;
-  margin-bottom: 0px;
-  background-color: #ffffff;
-}
-
-/* Main - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  main {
-    position: relative;
-    top: -32px;
-    left: 0;
-    width: 100%;
-    margin: auto;
-    padding: none;
-  }
-}
-
-/* Main - Desktop/Responsive Design */ 
-@media only screen and (min-width: 720px) { 
-  main {
-    position: relative;
-    top: -32px;
-    left: 0;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    padding: none;
-  }
-}
-
-/* Section 1 "Introduction" */
-.index-main-section1 { 
   position: relative;
-  top: 1em;
-  width: 100%;
-  height: 370px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  margin-top: none;
-}
+  left: 7%;
 
-/* Section 1 "Introduction" - Desktop/Responsive Design */ 
-@media only screen and (min-width: 720px) { 
-  .index-main-section1 {
-    background-image: url("assets/index-section1-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    margin-bottom: -4em;
-  }
-}
+  display: inline-block;
 
-/* Section 1 "Introduction" - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main-section1 {
-    background-image: url("assets/index-section1-bg-mobile.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top; 
-    margin-bottom: -8em;
-  }
-}
-
-/* Title text (Section 1 "Introduction") */
-.index-main--section1-text-title {
-  position: relative;
-  top: 30%;
-  left: 10%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 300;
-  font-size: 4em;
+  font-size: 1.5em;
+  text-align: center;
   color: #ffffff;
-  text-shadow: 2px 2px 10px #000000;
-  margin-right: 1em;
-  transition: all 1.25s ease-in-out;
+
+  user-select: none;
 }
 
-/* Title text (Section 1 "Introduction")  Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section1-text-title {
-    position: relative;
-    top: 20%;
-    left: 0%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 3em;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 2px 2px 10px #000000;
-    margin-right: 1em;
-    margin-left: 1em;
-  }
-}
-
-/* Subtitle text (Section 1 "Introduction"): "I'm a front end developer" */
-.index-main--section1-text-subtitle {
-  position: relative;
-  top: 2em;
-  left: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 2em;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px #000000;
-  margin-right: 1em;
-  transition: all 1.5s ease-in-out;
-}
-
-/* Subtitle text (Section 1 "Introduction")  Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section1-text-subtitle {
-    position: relative;
-    top: 10%;
-    left: 0;
-    margin-right: 1em;
-    margin-left: 1em;
-    font-size: 1.5em;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 2px 2px 1px #000000;
-  }
+/* Banner Img -> Image in welcome article */
+.index-banner-img {
+  
+  width: 100%;
 }
 
 /* Removes underline from links */
@@ -186,548 +143,358 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Button (Section 1 "Introduction")*/ 
-.index-main--section1-button {
-  position: relative;
-  top: -3em;
-  left: 70%;
-  padding: 1em;
-  border-width: 0;
-  border-radius: 0.3em;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
-  width: 10em;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 12pt;
-  background-color: #c75192;
-  color: #ffffff;
-}
+/* Main conatiner */
+main {
+  justify-content: center;
 
-/* Button (Section 1 "Introduction") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section1-button {
-    position: relative;
-    display: block;
-    top: 3em;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Roboto', sans-serif;
-    color: ffffff;
-    font-weight: 600;
-    font-size: 12pt;
-    background-color: #c75192;
-  }
-}
-
-/* Button (Section 1 "Introduction") - Hovered*/ 
-.index-main--section1-button:hover {
-  background-color: #be3f85;
-  transition: all 0.15s ease-in-out;
-}
-
-/* Section 2 "What I Do" */
-.index-main-section2 {
-  position: relative;
-  top: -4px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 2em;
+  padding: 0;
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: #ffc1e3;
-  border-radius: 0.4em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
+  margin: 0;
 
-/* Image (Icons for each section) */
-.index-main--icon-img {
-  display: block;
-  position: relative;
-  width: 58px;
-  height: 58px;
-  margin: auto;
-  transition: all 0.15s ease-in-out;
-}
-
-/* Title text (Section 2 "What I Do") */
-.index-main--section2-text-title {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 2.5em;
-  color: #000000;
-  transition: all 1.5s ease-in-out;
-}
-
-/* Title text (Section 2 "What I Do") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section2-text-title {
-    position: relative;
-    top: 10%;
-    left: 0%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    color: #000000;
-    text-align: center;
-  }
-}
-
-/* Paragraph1 text (Section 2 "What I Do") */
-.index-main--section2-text-paragraph1 {
-  position: relative;
-  top: 10%;
-  left: 15%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 1.8em;
-  color: #000000;
-  margin-right: 3em;
-  max-width: 80%;
-  transition: all 1.5s ease-in-out;
-}
-
-/* Paragraph1 text (Section 2 "What I Do") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section2-text-paragraph1 {
-    position: relative;
-    top: 10%;
-    left: 10%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 1.8em;
-    color: #000000;
-    margin-right: 3em;
-    transition: all 1.5s ease-in-out;
-  }
-}
-
-/* Section 3 "My Skills" */
-.index-main-section3 {
-  position: relative;
-  top: -4px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #ffcdd2;
-  border-radius: 0.4em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-/* Subtitle text (Section 3 "My Skills") */
-.index-main--section3-text-subtitle {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  color: #000000;
-  transition: all 1.5s ease-in-out;
-}
-
-/* Section 4 "Portfolio" */
-.index-main-section4 {
-  position: relative;
-  top: -4px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #b2fef7;
-  max-width: 1280px;
-  border-radius: 0.4em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-/* Image1 (Section 4 "Portfolio") */ 
-.index-main--section4-img1 {
-  position: relative;
-  display: block;
-  max-width: 30%;
-  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-  margin: auto;
-  margin-bottom: 2em;
-}
-
-/* Image1 (Section 4 "Portfolio") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section4-img1 {
-  position: relative;
-  display: block;
-  max-width: 90%;
-  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-  margin: auto;
-  margin-bottom: 2em;
-  }
-}
-
-/* Button (Section 4 "Portfolio") */ 
-.index-main--section4-button {
-  position: relative;
-  display: block;
-  padding: 1em;
-  border-width: 0;
-  border-radius: 0.3em;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
-  width: 12em;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 12pt;
-  background-color: #45968e;
-  color: #ffffff;
-  margin-right: auto;
-  margin-bottom: 2em;
-  margin-left: auto;
-}
-
-/* Button (Section 4 "Portfolio") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section4-button {
-    position: relative;
-    display: block;
-    top: 10%;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 12pt;
-    background-color: #45968e;
-    margin-bottom: 2em;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-/* Button (Section 4 "Portfolio") - Hovered*/ 
-.index-main--section4-button:hover {
-  background-color: #265550;
-  transition: all 0.15s ease-in-out;
-}
-
-/* Section 5 "Prices" */
-.index-main-section5 {
-  position: relative;
-  top: -4px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #d7ffd9;
-  border-radius: 0.4em;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
-}
-
-/* Section 5 "Prices" - Container: used as a flex container for the different product articles*/
-.index-main-section5-container {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
   width: 100%;
-  margin: none;
 }
 
-/* Section 5 "Prices" - Article1 "Basic Site" */
-.index-main-section5-container-article1 {
-  position: relative;
+/* SECTION: Contains cards below the intitial welcome card. */ 
+section {
   display: flex;
-  flex-direction: column;
-  font-size: 12pt;
-  margin: auto;
-  margin-bottom: 2em;
-  width: 90%;
-  padding-top: 1em;
-  padding-right: 2em;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: space-around;
+
+  padding: 0;
+  padding-top: 2em;
   padding-bottom: 2em;
-  padding-left: 2em;
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
+  margin: 0;
+
+  width: 100%;
+  max-width: 1024px;
 }
 
-/* Section 5 "Prices" - Article1 "Basic Site" - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main-section5-container-article1 {
-    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    width: 75%;
-  }
-}
-
-/* Section 5 "Prices" - Article2 "Custom Site" */
-.index-main-section5-container-article2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  font-size: 12pt;
-  margin: auto;
-  margin-bottom: 2em;
-  width: 90%;
-  padding-top: 1em;
-  padding-right: 2em;
-  padding-bottom: 2em;
-  padding-left: 2em;
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-}
-
-/* Section 5 "Prices" - Article2 "Custom Site" - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main-section5-container-article2 {
-    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.16), 0 3px 10px 1px rgba(0,0,0,0.23);
-    width: 75%;
-  }
-}
-
-/* Image (Section 5 "Prices" - Article1): small icons which represent each website */
-.index-main--section5-img {
-  display: block;
-  position: relative;
-  width: 58px;
-  height: 58px;
-  box-shadow: 0 2px 3px 0px rgba(0,0,0,0.16), 0 2px 3px 1px rgba(0,0,0,0.23);
-  margin: auto;
-}
-
-/* Subtitle text (Section 5 "Prices" - Article1): the titles of each product article */
-.index-main--section5-text-subtitle {
-  display: flex;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 2em;
-  color: #000000;
-  transition: all 1.5s ease-in-out;
-  margin-bottom: 0.5em;
-}
-
-/* Sub-Subtitle text (Section 5 "Prices" - Article1): Sub headline of each product title */
-.index-main--section5-text-sub-subtitle {
-  display: flex;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  color: #000000;
-  margin-bottom: 2em;
-}
-
-/* Paragraph1 text (Section 5 "Prices" - Article1): Paragraph which decribes the product */
-.index-main--section5-text-paragraph1 {
-  display: flex;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 1.8em;
-  color: #000000;
-  margin-bottom: 3em;
-}
-
-/* HR (Section 5 "Prices" - Article1): Separation Line */
-.index-main--section5-hr {
+/* ARTICLE -> Cards */
+.index-main-article {
   margin-top: 1em;
   margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8em;
+
+  width: 93%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  }
+
+/* ARTICLE -> Cards: HOVERED changes color*/
+.index-main-article:hover {
+  background-color: #f1f1f1;
+  transition: all .25s linear;
 }
 
-/* Paragraph2 text (Section 5 "Prices" - Article1): Paragraph which lists what the product receives */
-.index-main--section5-text-paragraph2 {
-  display: flex;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 1.3em;
-  color: #000000;
-  margin-top: 0em;
+/* ARTICLEpic -> Cards with images on them */
+.index-main-articlepic {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.8em;
+
+  width: 99%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  transition: all .3s ease-in-out;
+
 }
 
-/* Paragraph2 text (Section 5 "Prices" - Article1) - Desktop/Responsive Design: Paragraph which lists what the product receives */ 
-@media only screen and (min-width: 720px) { 
-  .index-main--section5-text-paragraph2 {
-    position: relative;
-    left: 25%;
+/* ARTICLEpic -> Cardspic: HOVERED changes color*/
+.index-main-articlepic:hover {
+  background-color: #f1f1f1;
+}
+
+#card:hover {
+  transform: scale(1.03);
+
+  transition: all .2s ease-in-out;
+}
+
+/* ARTICLEpic (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  .index-main-articlepic {
+    width: 25em; /* On desktop, width has to be in em instead of % in order for flex to work */
   }
 }
 
-/* Paragraph3 text (Section 5 "Prices" - Article1): Paragraph which summarises the product */
-.index-main--section5-text-paragraph3 {
-  display: flex;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1.8em;
-  color: #000000;
-  margin-top: 2em;
-}
-
-/* Button (Section 5 "Buy a Website") */ 
-.index-main--section5-button {
-  position: relative;
-  display: block;
-  padding: 1em;
-  border-width: 0;
-  border-radius: 0.3em;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
-  width: 18em;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 12pt;
-  background-color: #81c784;
-  color: #ffffff;
-  margin-top: 2em;
-  margin-right: auto;
-  margin-bottom: 2em;
+/* ARTICLEnh -> Cards DOESN't CHANGE COLOR WHEN HOVERED (STAYS WHITE) */
+.index-main-articleWhiteNH {
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: auto;
-}
-
-/* Button (Section 5 "Buy a Website") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section5-button {
-    position: relative;
-    display: block;
-    top: 10%;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 12pt;
-    background-color: #81c784;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-/* Button (Section 5 "Buy a Website") - Hovered*/ 
-.index-main--section5-button:hover {
-  background-color: #519657;
-  transition: all 0.15s ease-in-out;
-}
-
-
-hr {
-  border: 0.5px solid #265550;
-  width: 85%;
-  margin-top: 3em;
   margin-right: auto;
-  margin-bottom: 3.3em;
-  margin-left: auto;
+  padding: 0.8em;
+
+  width: 93%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-/* Section 6 "More" */
-.index-main-section6 {
-  position: relative;
-  top: -4px;
+/* articleTB -> Card is a TITLE BLOCK (It doesn't have a top margin, no pic, and occupies 100%) */
+.index-main-articleTB {
+  margin-bottom: 0em;
+  margin-left: -1em;
+
+  padding: 0.8em;
+
   width: 100%;
-  margin: none;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #ecb2fe;
-  max-width: 1280px;
-}
 
-/* Title text (Section 6 "More") */
-.index-main--section6-text-title {
-  position: relative;
-  top: 10%;
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 2.5em;
-  color: #000000;
-  transition: all 1.5s ease-in-out;
+
+  background-color: #ffffff;
+  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-/* Title text (Section 6 "More") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section6-text-title {
-    position: relative;
-    top: 10%;
-    left: 0%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    color: #000000;
-    text-align: center;
+/* articleTB -> Card is a TITLE BLOCK, Use id here so that other pages don't use "articleTB"'s properties */
+#bannerArticle { 
+  height: 8em;
+  width: 100%;
+
+  padding: 0.8em;
+
+  background-image: url(assets/index-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* articleTB (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  #bannerArticle{
+    height: 20em; /* On desktop, height is bigger */
+
+    padding: 0.8em;
   }
 }
 
-/* Button (Section 6 "More") */ 
-.index-main--section6-button {
+/* Images on the ARTICLEpic */
+.index-main-article-img {
+  width: 100%;
+
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+
+  margin-bottom: -1em;
+}
+
+/* Images in Cards */
+.index-main-card-img {
+  width: 90%;
+
+  border-radius: 0.4em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Button (Article 1) */
+.index-main-article-button {
   position: relative;
-  display: block;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1em;
+
+  overflow: hidden;
+
   border-width: 0;
-  border-radius: 0.3em;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .6);
-  width: 12em;
   outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 12pt;
-  background-color: #96457e;
-  color: #ffffff;
-  margin-right: auto;
-  margin-bottom: 2em;
-  margin-left: auto;
-}
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #1875d1;
 
-/* Button (Section 6 "More") - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--section6-button {
-    position: relative;
-    display: block;
-    top: 10%;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 12pt;
-    background-color: #96457e;
-    margin-bottom: 2em;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-/* Button (Section 6 "More") - Hovered*/ 
-.index-main--section6-button:hover {
-  background-color: #4f2655;
-  transition: all 0.15s ease-in-out;
-}
-
-/* Paragraph1 text (Footer): "website created by Sean Leitch © 2019" */
-.index-main--footer-text-paragraph1 {
-  position: relative;
+  font-family: 'Roboto';
+  font-weight: 600;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  font-size: 1em;
-  color: #000000;
-  max-width: 1000px;
-  transition: all 1.5s ease-in-out;
-  margin-top: 0em;
-  margin-right: auto;
-  margin-bottom: 2em;
-  margin-left: auto;
+  color: #ffffff;
+  
+  transition: background-color .2s;
 }
 
-/* Paragraph1 text (Footer) - Mobile/Responsive Design */ 
-@media only screen and (max-width: 720px) { 
-  .index-main--footer-text-paragraph1 {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-    text-align: center;
-    color: #000000;
-    transition: all 1.5s ease-in-out;
+/* Button (Article 1): HOVERED */
+.index-main-article-button:hover {
+  background-color: #005bb2;
+}
+
+/* H2 -> Welcome Card Titles */
+h2 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #5e35b1;
+}
+
+/* h2 -> H2 on the banner */
+#bannerH2 {
+  position: relative;
+
+  top: 1em;
+  left: 0.5em;
+
+  text-shadow: 0px 0px 6em #000000;
+
+  font-size: 4em;
+  font-weight: 300;
+  color: white;
+  font-family: Roboto;
+
+  text-align: left;
+
+  margin-top: 0em;
+}
+
+/* h2 -> H2 on the banner (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  #bannerH2 {
+    top: 3em;
+    left: 0.8em;
   }
+}
+
+/* H3 -> Card Titles */
+h3 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #5e35b1;
+}
+
+/* H4 -> Only used in motivational quotes for the author's name */
+h4 {
+  position: relative;
+
+  margin-right: 1em;
+  margin-bottom: 0;
+
+  font-family: 'Roboto';
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: right;
+
+  color: #32a07f;
+}
+
+/* p -> Card Paragraphs */
+p {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+
+  color: #000000;
+}
+
+/* p -> Paragraph on the banner */
+#bannerP {
+  position: absolute;
+
+  text-shadow: 0px 0px 3px #ffffff;
+
+  font-size: 2.4em;
+  font-weight: 300;
+
+  margin-top: 0em;
+  
+  color: #000000;
+}
+
+/* p -> ARTICLEpic Card Paragraphs */
+p.card-text {
+  position: relative;
+
+  margin: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+
+  color: #000000;
+
+  max-width: 90%;
+}
+
+/* p -> Paragraphs which are aligned to the left */
+p.left-text {
+  position: relative;
+
+  max-width: 95%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+
+  color: #000000;
+}
+
+/* p -> Only used in motivational quotes for the quotes */
+p.quote {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+
+  color: #000000;
+}
+
+/* p -> Date text on blog entries */
+p.date-text {
+  position: relative;
+
+  margin-top: -1em;
+  margin-bottom: 0.3em;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+
+  color: #5e35b1;
+}
+
+footer {
+  position: relative;
+
+  left: 10%;
+  bottom: 1%;
+
+  margin-top: 2em;
 }

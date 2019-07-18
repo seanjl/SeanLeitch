@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- sean leitch Website/page2 blog - Sean Leitch - Snowblock Studios 2019 -->
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link href="aos/aos.css" rel="stylesheet">
+        <link rel="icon" href="assets/favicon.gif" type="image/gif" sizes="16x16">
+        <title>Sean Leitch Blog</title>
+    </head>
+
+    <body>
+
+        <!-- Top Header, with "sean leitch" text. Clicking on it scrolls to the top -->
+        <header>
+            <a href="index.html"><img class="index-header-nav-img" src="assets/nav-back.svg"></a>
+            <a href="#main"><h1 class="index-header-text-title">sean leitch</h1></a>
+        </header>
+
+        <!-- Main Container-->
+        <main id="main" data-aos="slide-up" data-aos-duration="400">
+            <!-- Articles (Cards) inside a "a" element. Each card contains a quote -->
+
+            <!-- Article: "Sean Leitch Blog " -->
+            <article class="index-main-articleTB" data-aos="fade-up">
+                <h2>sean leitch blog</h2>
+                <p>web dev, personal development, tech in general</p>
+            </article>
+
+            <section>
+                    <!-- Article: "First Post" -->
+                    <a href="post-1.html" id="card">
+                        <article class="index-main-articlepic" data-aos="fade-up">
+                            <img class="index-main-article-img" src="assets/blog-assets/post1-cover.jpg" alt="post1">
+                            <h3>First Post</h3>
+                            <p class="date-text">18 Jul 2019</p>
+                            <p class="card-text">First test post on my blog</p>
+                        </article>
+                    </a>
+            </section>
+        </main>
+        <!-- Scroll Animation Script-->
+        <script src="aos/aos.js"></script>
+        <script  type="text/javascript">
+            AOS.init({
+                duration: 900,
+            });
+        </script>
+    </body>
+</html>

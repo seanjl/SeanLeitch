@@ -143,6 +143,24 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.link {
+  -webkit-tap-highlight-color: #e3ffee;
+
+  position: relative;
+
+  max-width: 95%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+
+  color: #349b67;
+}
+
 /* Main conatiner */
 main {
   justify-content: center;
@@ -306,6 +324,42 @@ section {
   border-radius: 0.6em;
 
   margin-bottom: 1em;
+}
+
+/* Images in portfolio posts (Desktop Examples) */
+.portfolio-img {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Images in portfolio posts (Mobile Examples) */
+.portfolio-img-mobile {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Images in portfolio posts (Mobile Examples) (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  .portfolio-img-mobile {
+    width: 40%;
+
+    border-radius: 0.6em;
+  
+    margin: auto;
+    margin-bottom: 1em;
+  
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
 }
 
 /* Images in Cards */

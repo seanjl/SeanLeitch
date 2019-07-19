@@ -299,6 +299,15 @@ section {
   margin-bottom: -1em;
 }
 
+/* Images in blog posts */
+.blog-img {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+}
+
 /* Images in Cards */
 .index-main-card-img {
   width: 90%;

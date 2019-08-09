@@ -452,19 +452,19 @@ h3 {
   color: #5e35b1;
 }
 
-/* H4 -> Only used in motivational quotes for the author's name */
+/* H4 -> Used in portfolio to indicate what type of project it is */
 h4 {
   position: relative;
 
-  margin-right: 1em;
-  margin-bottom: 0;
-
   font-family: 'Roboto';
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
-  text-align: right;
+  text-align: center;
 
-  color: #32a07f;
+  margin-top: -1em;
+  margin-bottom: 0.2em;
+
+  color: #4e2c92;
 }
 
 /* p -> Card Paragraphs */
@@ -568,4 +568,19 @@ footer {
   bottom: 1%;
 
   margin-top: 2em;
+}
+
+/* Videos in the portfolio section */
+
+iframe {
+  width: 100%;
+  height: 14em;
+}
+
+/* Videos in the portfolio section (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  iframe {
+    width: 100%;
+    height: 35em;
+  }
 }

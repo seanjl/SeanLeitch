@@ -1,94 +1,314 @@
 <!DOCTYPE html>
-<!-- sean leitch Website/index - Sean Leitch - Snowblock Studios 2019 -->
-<html>
+<html lang="en">
+<!-- snowblock Website/index - Sean Leitch 2019 -->
+ 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>snowblock | The Best Low-Cost Web Services Agency</title>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">">
-        <link href="style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-        <link href="aos/aos.css" rel="stylesheet">
-        <link rel="icon" href="assets/favicon.ico" type="image/ico" sizes="16x16">
-        <title>sean leitch | Welcome to my site!</title>
-    </head>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <body>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link href="aos/aos.css" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+</head>
 
-        <!-- Top Header, with "sean leitch" text. Clicking on it scrolls to the top -->
-        <header>
-            <a href="index.html"><img class="index-header-nav-img" src="assets/nav-back-white.svg"></a>
-            <a href="#main"><h1 class="index-header-text-title">sean leitch</h1></a>
-        </header>
+<body>
+  <!-- Navigation Bar-->
+  <nav class="blue darken-1 nav-bar" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo white-text">snowblock</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#index-banner" class="white-text">Home</a></li>
+        <li><a href="#container2-content" class="white-text">Products</a></li>
+        <li><a href="#nav-portfolio" class="white-text">Portfolio</a></li>
+        <li><a href="#nav-buy" class="white-text">Buy</a></li>
+        <li><a href="blog.html" class="white-text">Blog</a></li>
+        <li><a href="#row-footer" class="white-text">About</a></li>
 
-        <!-- Main Container-->
-        <main id="main" data-aos="slide-up" data-aos-duration="400">
-            <!-- Articles/Cards: Each card is contained inside a "a" element -->
+      </ul>
 
-            <!-- Article: "welcome" -->
-            <article id="bannerArticle" class="index-main-articleTB" data-aos="fade-up">
-                <h2 id="bannerH2">Welcome</h2>
-            </article>
+      <ul id="nav-mobile" class="sidenav blue">
+        <li><a href="#index-banner" class="white-text">Home</a></li>
+        <li><a href="#container2-content" class="white-text">Products</a></li>
+        <li><a href="#nav-portfolio" class="white-text">Portfolio</a></li>
+        <li><a href="#nav-buy" class="white-text">Buy</a></li>
+        <li><a href="blog.html" class="white-text">Blog</a></li>
+        <li><a href="#row-footer" class="white-text">About</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-            <!-- Section: This section is a flex container, each article is a flex item-->
-        <section>
-                <!-- Article: "Who am I" -->
-                <a href="page1-intro.html" id="card">
-                    <article class="index-main-articlepic" data-aos="fade-up">
-                        <img class="index-main-article-img" src="assets/index-article-wai.jpg" alt="introduction">
-                        <h3>who's sean leitch?</h3>
-                        <p class="card-text">find out who I am and what I do</p>
-                    </article>
-                </a>
+  <!-- Container 1: Banner -->
+  <article class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <video autoplay muted loop id="bannerVideo">
+          <source src="assets/index-banner.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+      </video>
 
-                <!-- Article: "Blog" -->
-                <a href="page2-blog.html" id="card">
-                    <article class="index-main-articlepic" data-aos="fade-up">
-                        <img class="index-main-article-img" src="assets/index-article-blog.jpg" alt="blog">
-                        <h3>blog</h3>
-                        <p class="card-text">articles on web dev and personal development</p>
-                    </article>
-                </a>
+      <h1 class="header center blue-text">the best low-cost web agency</h1>
 
-                <!-- Article: "Portfolio" -->
-                <a href="page3-portfolio.html" id="card">
-                    <article class="index-main-articlepic" data-aos="fade-up">
-                        <img class="index-main-article-img" src="assets/index-article-portfolio.jpg" alt="portfolio">
-                        <h3>my work</h3>
-                        <p class="card-text">the projects I've worked on</p>
-                    </article>
-                </a>
+      <div class="row center">
+        <h5 class="col s12 light">We'll help you create an intuitive, beautiful and professional website which will make you stand out over the rest!</h5>
+      </div>
 
-                <!-- Article: "Snowblock" -->
-                <a href="http://bit.ly/Snowblock" id="card">
-                    <article class="index-main-articlepic" data-aos="fade-up">
-                        <img class="index-main-article-img" src="assets/index-article-snowblock.png" alt="snowblock">
-                        <h3>snowblock studios</h3>
-                        <p class="card-text">my web dev agency</p>
-                    </article>
-                </a>
+      <div class="row center">
+        <a href="#container2-content" id="download-button" class="btn-large waves-effect waves-light blue darken-1">Get Started</a>
+      </div>
 
-                <!-- Article: "Contact" -->
-                <a href="page4-contact.html" id="card">
-                    <article class="index-main-articlepic" data-aos="fade-up">
-                        <img class="index-main-article-img" src="assets/index-article-contact.jpg" alt="contact">
-                        <h3>contact</h3>
-                        <p class="card-text">get in touch with me</p>
-                    </article>
-                </a>
+      <br><br>
+    </div>
+  </article>
+
+  <!-- Container 2: Content -->
+  <article id="container2-content">
+    <div class="section container2-subcontent">
+
+      <!--   Row Container 2: Services   -->
+      <div class="row section row-container blue" data-aos="zoom-in">
+        <h4 class="col1 s12 m12 center white-text ">our products</h4>
+	
+      <br>
+    
+      <!-- Row2 Width Limiter -->
+      <div class="row-width-limiter">
+
+        <!-- Row2-Column1: Custom Site -->
+        <section class="col s12 m4 card-margin" data-aos="zoom-in">
+          <div class="card">
+              <div class="card-image">
+                <img src="assets/index-products-customsite.jpg">
+              </div>
+
+              <div class="card-content">
+                <span class="card-title">Custom Website</span>
+                <p>Website made to your specifications. Can be built from scratch or using a CMS or web builder (Ex: Wordpress)</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#nav-buy">Buy</a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Row2-Column2: Website to App -->
+      <section class="col s12 m4 card-margin" data-aos="zoom-in">
+          <div class="card">
+              <div class="card-image">
+                <img src="assets/index-products-app.jpg">
+              </div>
+
+              <div class="card-content">
+                <span class="card-title">Website to App </span>
+                <p>Conversion of a website into an Android app.</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#nav-buy">Buy</a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Row2-Column3: Translation -->
+      <section class="col s12 m4 card-margin" data-aos="zoom-in">
+          <div class="card">
+              <div class="card-image">
+                <img src="assets/index-products-translation.jpg">
+              </div>
+
+              <div class="card-content">
+                <span class="card-title">Translation</span>
+                <p>English to Spanish and Spanish to English translation of a website or document.</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#nav-buy">Buy</a>
+              </div>
+          </div>
+      </section>
+  </div>
+      </div>
+
+
+    <!--   Row Container 3: Why choose snowblock   --> 
+    <div class="row row-container section" data-aos="zoom-in" >
+
+      <!-- Row2 Width Limiter -->
+      <div class="row-width-limiter2"> 	
+
+        <!-- Row3-Column1: Low Cost -->
+        <section class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">attach_money</i></h2>
+            <h5 class="center">Low Cost</h5>
+
+            <p class="center light flow-text">We focus on creating elegant, professional sites and media at a low-cost for small and medium businesses. You will receive a high-quality project at an affordable price.</p>
+          </div>
         </section>
-        </main>
 
-        <footer>
-            <p>© sean leitch 2019</p>
-        </footer>
+        <!-- Row3-Column2: User Experience Focused -->
+        <section class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">insert_emoticon</i></h2>
+            <h5 class="center">User Experience Focused</h5>
 
-        <!-- Scroll Animation Script-->
-        <script src="aos/aos.js"></script>
-        <script  type="text/javascript">
-            AOS.init({
-                duration: 900,
-            });
-        </script>
+            <p class="center light flow-text">Our knowledge in UI design, image & video editing, SEO and accesibility allows us to build appealing, well-structured sites and apps. This gives your business a polished look and your clients will know they made the right decision by trusting you.</p>
+          </div>
+        </section>
+
+        <!-- Row2-Column3: Easy to work with -->
+        <section class="col s12 m4" >
+          <div class="icon-block">
+            <img class="row1-column2-img" src="assets/row1-img.svg">
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+      <!--   Row Container 4: Portfolio   -->
+    <div class="row section row-container teal" data-aos="zoom-in" id="nav-portfolio">
+      <h4 class="col1 s12 m12 center white-text ">our work</h4>
+	
+      <br>
+        <!-- Width Limiter-->
+		    <div class="row-width-limiter">
+
+        <!-- Row4-Column1: Vandersur Reformas -->
+        <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card">
+                <div class="card-image">
+                  <img src="assets/portfolio-assets/portfolio1-cover.jpg">
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title">Vandersur Reformas</span>
+                  <p>Bussiness and portfolio website for a construction company based in Spain.</p>
+                </div>
+
+                <div class="card-action">
+                  <a href="portfolio-vandersur.html" class="pink-text">See More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Row4-Column2: Milo's Coffee Shop -->
+        <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card">
+                <div class="card-image">
+                  <img src="assets/portfolio-assets/portfolio2-cover.jpg">
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title">Milo's Coffee Shop </span>
+                  <p>Landing page for a Coffee Shop</p>
+                </div>
+
+                <div class="card-action">
+                  <a href="portfolio-miloscoffee.html" class="pink-text">See More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Row4-Column3: Explore Portfolio -->
+        <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card">
+                <div class="card-image">
+                  <img src="assets/index-article-portfolio.jpg">
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title">Portfolio</span>
+                  <p>Explore our portfolio and see what projects we're working on</p>
+                </div>
+
+                <div class="card-action">
+                  <a href="portfolio.html" class="pink-text">See More</a>
+                </div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+      <!--   Row Container 5: Buy a project   --> 
+      <div class="row row-container section" data-aos="zoom-in" id="nav-buy" >
+        	
+        <!-- Row5: Google Form -->
+        <section class="col s12 m12">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">shopping_cart</i></h2>      
+            <div class="iframe-container"></div>      
+            <iframe class="buy-form" id="requestQuote" src="https://docs.google.com/forms/d/e/1FAIpQLSdKciHDFwFVux_MCi8jtPCzGqyITs4M-l3AnxasPGAFesPzrA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>            
+          </div>
+        </section>
         
-    </body>
+        </section>
+      </div>
+    </div>
+    </div>
+  </article>
+
+    <!-- Footer -->
+    <footer class="page-footer blue" id="row-footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">about us</h5>
+            <p class="grey-text text-lighten-4">Snowblock Media is a creative agency focused on web design & development, based in Madrid, founded by Sean Leitch.</p>
+            <p class="grey-text text-lighten-4">We focus on creating elegant, professional sites at a low-cost for small and medium businesses, but we also take on smaller projects and gigs such as English/Spanish translations, video editing for promotional campaigns, email templates and more!</p>
+          </div>
+          
+          <div class="col l3 s12">
+            <h5 class="white-text">contact</h5>
+            <ul>
+              <li><a class="white-text" href="mailto:snowblock@consultant.com?Subject=Contact%20snowblock" target="_top">Email</a></li>
+              <li><a class="white-text" href="https://join.skype.com/invite/nQXeJr7KJDfs">Skype</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/snowblockmedia/">Instagram</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/seanjleitch/">Instagram (Sean Leitch)</a></li>
+              <li><a class="white-text" href="https://github.com/seanjl/">GitHub</a></li>
+              <li><a class="white-text" href="https://www.linkedin.com/in/seanjleitch/">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <div class="col l3 s12">
+            <h5 class="white-text">more</h5>
+            <ul>
+              <li><a class="white-text" href="#index-banner">Home</a></li>
+              <li><a class="white-text" href="blog.html">Blog</a></li>
+              <li><a class="white-text" href="#!">Sean Leitch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="blue-text text-lighten-3" href="https://seanjl.github.io/SeanLeitch/">Sean Leitch</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts: Materialize-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <!-- Scripts: AOS Animations-->
+    <script src="aos/aos.js"></script>
+    <script  type="text/javascript">
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
 </html>

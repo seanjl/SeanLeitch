@@ -5,10 +5,12 @@
 
 html {
   scroll-behavior: smooth;
+  background: #0097a7;
+  background: linear-gradient(167deg, #6a1b9a 0%, #0097a7 83%);
 }
 
 nav {
-  background-color: #2196F3;
+  background-color: #0097A7;
   z-index: 100066 !important;
 }
 
@@ -21,7 +23,7 @@ nav {
 
 /* Header Title Text*/
 .header {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-weight: 800;
 }
 
@@ -40,12 +42,12 @@ nav {
 
 /* Container2: Content: contains everything bellow banneer and above footer */
 #container2-content {
-  background-color: white;
+  background: transparent;
 }
 
 /* container2-subcontent: contains everything inside container 2.*/
 .container2-subcontent {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 /* row-container: each row inside container2-subcontent. */
@@ -123,17 +125,6 @@ footer {
   margin-left: auto;
 }
 
-/* Google Form (handles orders) */
-.buy-form {
-  width: 100%;
-  height: 80em;
-
-  margin-top: 2em;
-
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 /* Small Image In Portfolio */
 .portfolio-img {
   position: relative;
@@ -162,6 +153,10 @@ footer {
 
 .orange-gradient {
   background: linear-gradient(-1deg, #FFCC80 0%, #FFCC80 87%, #ffffff 90%);
+}
+
+.nav-wrapper {
+  color: purple !important;
 }
 
 /* CUSTOM FONT-SIZES */

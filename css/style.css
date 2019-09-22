@@ -25,8 +25,8 @@ nav {
 	font-weight: 800;
 }
 
-/* Video in the banner */
-#bannerVideo {
+/* Image in the banner */
+.index-banner {
   position: fixed;
 
   right: 0;

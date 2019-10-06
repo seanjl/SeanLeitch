@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- snowblock Website/blog article1 - Sean Leitch 2019 -->
+<!-- snowblock Website/blog article2 - Sean Leitch 2019 -->
  
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link href="aos/aos.css" rel="stylesheet">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
       <div class="col s12">
         <a href="" class="breadcrumb"></a>
         <a href="/blog.html" class="breadcrumb">Blog</a>
-        <a href="#!" class="breadcrumb">Creation of Snowblock Media</a>
+        <a href="#!" class="breadcrumb">Java Triangle Exercise</a>
       </div>
     </div>
   </nav>
@@ -44,8 +44,8 @@
 
     <!--   Row Container 1: Blog Post   -->
     <div class="row section row-container" data-aos="zoom-in" id="nav-portfolio">
-      <h1 class="header col1 s12 m12 center black-text darken-3">Creation of Snowblock Media</h1>
-      <h5 class="article-date2 col1 s12 m12 center">21 Sep 2019</h5>
+      <h1 class="header col1 s12 m12 center black-text darken-3">Java Triangle Exercise</h1>
+      <h5 class="article-date2 col1 s12 m12 center">6 Oct 2019</h5>
 	
       <br>
         <!-- Width Limiter-->
@@ -53,12 +53,46 @@
 
           <!-- Row1-Column1: Article Container -->
           <section class="col s12 m12 center">
-            <p class="flow-text">Throughout 2019 I've been learning web development, design and accessibility. After working on a few projects of my own, I decided it was time to use my knowledge to help others achieve their goals.</p>
-            <p class="flow-text">On October 1st, Snowblock Media will begin operations and start accepting projects. Our services will include website development, English/Spanish translations and mobile app development.</p>
-			<p class="flow-text">Aside from offering these services, Snowblock Media (via the Snowblock Creator's Showcase) will also be a hub for digital works of art including websites, videos, music, graphic designs, UIs, etc.</p>
-            <p class="flow-text">I aim to deliver polished, professional projects at a reasonable price, as well as sharing high-quality content from smaller artists. </p>
-            <p class="flow-text">My goal is to constantly improve myself and develop my skills as much as I can in order to provide value to the world. I'm excited for the future and I'm confident Snowblock Media will one day be an empire.</p>
-            <h5 class="right"><i>-Sean Leitch, CEO of Snowblock Media</i></h5>
+            <p class="flow-text">This is a java app which receives 3 inputs (sides of a triangle) and outputs what type of triangle it is</p>
+            <p class="flow-text">The user inputs the length of each side of the triangle.</p>
+            <code>package uem.dam.m11.tareaejercicios;
+
+              import java.util.Scanner;
+              
+              public class EjercicioTriangulo {
+              
+                public static void main(String[] args) {
+              
+                  // Mensaje que dice al usuario "Introduce los lados del triangulo:"
+                  System.out.println("Introduce los lados del triangulo");
+                  
+                  // Lee los lados del triangulo
+                      Scanner sc = new Scanner(System.in);
+                      int lado1 = sc.nextInt();
+                      int lado2 = sc.nextInt();
+                      int lado3 = sc.nextInt();
+              
+                  // Mensaje que dice al usuario "El tri�ngulo es:"
+                  System.out.println("El tri�ngulo es: ");
+                  
+                      /* Operador ternario / Condicional: Compara los lados del triangulo
+                       * e indica al usuario que tipo de tri�ngulo es.
+                  */
+                      if(lado1==lado2 && lado2==lado3)
+                          System.out.println("Equilatero");
+              
+                      else 
+                        if ((lado1==lado2 && lado2!=lado3 ) || (lado1!=lado2 && lado3==lado1) || (lado3==lado2 && lado3!=lado1))
+                          System.out.println("Isosceles");
+              
+                        else 
+                          if(lado1!=lado2 && lado2!=lado3 && lado3!=lado1)
+                            System.out.println("Escaleno");
+                      
+                      sc.close();
+                  }
+              }
+              </code>
           </section>
           
         </div>

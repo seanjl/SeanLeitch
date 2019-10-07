@@ -55,7 +55,7 @@
           <section class="col s12 m12 center">
             <p class="flow-text">This is a java app which receives 3 inputs (sides of a triangle) and outputs what type of triangle it is.</p>
             <p class="flow-text">The user inputs the length of each side of the triangle. The app tells the user whether the triangle is equilateral, isosceles or scalene.</p>
-              <div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+            <div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
  3
  4
@@ -89,42 +89,45 @@
 32
 33
 34
-35</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">public</span> <span style="color: #6ab825; font-weight: bold">class</span> <span style="color: #447fcf; text-decoration: underline">TriangleExercise</span> <span style="color: #d0d0d0">{</span>
+35
+36</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">public</span> <span style="color: #6ab825; font-weight: bold">class</span> <span style="color: #447fcf; text-decoration: underline">TriangleExercise</span> <span style="color: #d0d0d0">{</span>
 
 	<span style="color: #6ab825; font-weight: bold">public</span> <span style="color: #6ab825; font-weight: bold">static</span> <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">(String[]</span> <span style="color: #d0d0d0">args)</span> <span style="color: #d0d0d0">{</span>
 
         <span style="color: #999999; font-style: italic">/* Prints a message which tells the user &quot;Introduce the length of</span>
 <span style="color: #999999; font-style: italic">        each side of the triangle&quot;</span>
 <span style="color: #999999; font-style: italic">        */</span>
-		<span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Introduce the length of each side of the triangle&quot;</span><span style="color: #d0d0d0">);</span>
-		
-		<span style="color: #999999; font-style: italic">// Reads the length of each side of the triangle</span>
+        <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Introduce the length of each side of the triangle&quot;</span><span style="color: #d0d0d0">);</span>
+            
+        <span style="color: #999999; font-style: italic">// Reads the length of each side of the triangle</span>
         <span style="color: #d0d0d0">Scanner</span> <span style="color: #d0d0d0">sc</span> <span style="color: #d0d0d0">=</span> <span style="color: #6ab825; font-weight: bold">new</span> <span style="color: #d0d0d0">Scanner(System.</span><span style="color: #bbbbbb">in</span><span style="color: #d0d0d0">);</span>
         <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">side1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sc.</span><span style="color: #bbbbbb">nextInt</span><span style="color: #d0d0d0">();</span>
         <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">side2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sc.</span><span style="color: #bbbbbb">nextInt</span><span style="color: #d0d0d0">();</span>
         <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">side3</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sc.</span><span style="color: #bbbbbb">nextInt</span><span style="color: #d0d0d0">();</span>
 
-		<span style="color: #999999; font-style: italic">//  Prints a message which tells the user  &quot;The triangle is:&quot;</span>
-		<span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;The triangle is: &quot;</span><span style="color: #d0d0d0">);</span>
-		
+        <span style="color: #999999; font-style: italic">//  Prints a message which tells the user  &quot;The triangle is:&quot;</span>
+        <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;The triangle is: &quot;</span><span style="color: #d0d0d0">);</span>
+
         <span style="color: #999999; font-style: italic">/* If/Else Statement: Compares the lengths of each side</span>
-<span style="color: #999999; font-style: italic">         * and tells the user what type of triangle it is.</span>
-<span style="color: #999999; font-style: italic">		*/</span>
+<span style="color: #999999; font-style: italic">        * and tells the user what type of triangle it is.</span>
+<span style="color: #999999; font-style: italic">        */</span>
+
         <span style="color: #6ab825; font-weight: bold">if</span><span style="color: #d0d0d0">(side1==side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side2==side3)</span>
             <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Equilateral&quot;</span><span style="color: #d0d0d0">);</span>
 
         <span style="color: #6ab825; font-weight: bold">else</span> 
-        	<span style="color: #447fcf">if</span> <span style="color: #d0d0d0">((side1==side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side2!=side3</span> <span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(side1!=side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3==side1)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(side3==side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3!=side1))</span>
+            <span style="color: #447fcf">if</span> <span style="color: #d0d0d0">((side1==side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side2!=side3</span> <span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(side1!=side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3==side1)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(side3==side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3!=side1))</span>
             <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Isosceles&quot;</span><span style="color: #d0d0d0">);</span>
 
-	        <span style="color: #6ab825; font-weight: bold">else</span> 
-	        	<span style="color: #447fcf">if</span><span style="color: #d0d0d0">(side1!=side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side2!=side3</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3!=side1)</span>
-	            <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Scalene&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">else</span> 
+                <span style="color: #447fcf">if</span><span style="color: #d0d0d0">(side1!=side2</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side2!=side3</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">side3!=side1)</span>
+                <span style="color: #d0d0d0">System.</span><span style="color: #bbbbbb">out</span><span style="color: #d0d0d0">.</span><span style="color: #bbbbbb">println</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Scalene&quot;</span><span style="color: #d0d0d0">);</span>
         
         <span style="color: #d0d0d0">sc.</span><span style="color: #bbbbbb">close</span><span style="color: #d0d0d0">();</span>
     <span style="color: #d0d0d0">}</span>
 <span style="color: #d0d0d0">}</span>
 </pre></td></tr></table></div>
+
 
           </section>
           

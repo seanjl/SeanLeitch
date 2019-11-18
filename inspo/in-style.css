@@ -1,0 +1,826 @@
+/* SNOWBLOCK WEBSITE, Written by Sean Leitch for Snowblock Studios */
+/* LAST UPDATED: 10-JUL-2019 */
+/* FIRST WRITTEN: 10-JUL-2019 */
+
+html {
+  padding: 0;
+  margin: 0;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+
+	background: linear-gradient(-45deg, #cbf8fd, #b6d7f5, #a0e0e7, #c5aeeb);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+  width: 100%;
+  max-width: 414px;
+}
+
+/* HTML BG Animations */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* HTML BG Animations */
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* HTML BG Animations */
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Html (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  html {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+body {
+  max-width: 414px;
+  background: transparent;
+}
+
+/* Body (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    max-width: 1920px;
+
+    margin: auto;
+  }
+}
+
+/* Header and top bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 3.7em;
+
+  padding: 0em;
+
+  background: #029be5;
+  box-shadow: 0 0px 3px 0px rgba(0,0,0,0.16), 0 0px 3px 0px rgba(0,0,0,0.23);
+
+}
+
+/* Top Bar -> IMG/Nav Back */
+.index-header-nav-img {
+  position: relative;
+  display: inline-block;
+  height: 1.5em;
+  left: 3%;
+  transition: 0.2s;
+}
+
+/* Top Bar -> IMG/Nav Back: HOVEREDS */
+.index-header-nav-img:hover {
+  transform: scale(1.25);
+}
+
+/* Title Text (Header Bar) */
+.index-header-text-title {
+  position: relative;
+  left: 7%;
+
+  display: inline-block;
+
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffffff;
+
+  user-select: none;
+}
+
+/* Banner Img -> Image in welcome article */
+.index-banner-img {
+  width: 100%;
+}
+
+/* Removes underline from links */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link {
+  -webkit-tap-highlight-color: #ffe3fd;
+
+  position: relative;
+
+  max-width: 95%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+
+  color: #9b349b;
+}
+
+/* Main conatiner */
+main {
+  justify-content: center;
+
+  padding: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0;
+
+  width: 100%;
+}
+
+/* SECTION: Contains cards below the intitial welcome card. */ 
+.section-explore {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: space-around;
+
+  padding: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: auto;
+
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* ARTICLE -> Cards */
+.index-main-article {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8em;
+
+  width: 93%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+/* ARTICLE -> Cards: HOVERED changes color*/
+.index-main-article:hover {
+  background-color: #f1f1f1;
+  transition: all .25s linear;
+}
+
+/* ARTICLEpic -> Cards with images on them */
+.index-main-articlepic {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.8em;
+
+  width: 99%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  transition: all .3s ease-in-out;
+
+}
+
+/* ARTICLEpic -> Cardspic: HOVERED changes color*/
+.index-main-articlepic:hover {
+  background-color: #f1f1f1;
+}
+
+#card:hover {
+  transform: scale(1.03);
+
+  transition: all .2s ease-in-out;
+}
+
+/* ARTICLEpic (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  .index-main-articlepic {
+    width: 25em; /* On desktop, width has to be in em instead of % in order for flex to work */
+  }
+}
+
+/* ARTICLEnh -> Cards DOESN't CHANGE COLOR WHEN HOVERED (STAYS WHITE) */
+.index-main-articleWhiteNH {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8em;
+
+  width: 93%;
+  border-radius: 0.4em;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* articleTB -> Card is a TITLE BLOCK (It doesn't have a top margin, no pic, and occupies 100%) */
+.index-main-articleTB {
+  margin-bottom: 0em;
+  margin-left: -1em;
+
+  padding: 0.8em;
+
+  width: 100%;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* articleTB -> Card is a TITLE BLOCK, Use id here so that other pages don't use "articleTB"'s properties */
+#bannerArticle { 
+  height: 8em;
+  width: 100%;
+
+  margin-top: 8em;
+
+  padding-bottom: 10em; /* On mobile, this makes it so that the text is higher up */
+}
+
+/* articleTB (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  #bannerArticle{
+    height: 20em; /* On desktop, height is bigger */
+
+    padding: 0.8em;
+    padding-bottom: -8em;
+    padding-top: -8em;
+  }
+}
+
+/* Video in the articleTB -> This is the banner video */
+#bannerVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* sectionLatestProducts -> Card is a flex container which displays productds */
+.index-main-sectionLatestProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+
+  margin-bottom: 0em;
+  margin-left: -1em;
+
+  padding: 0.8em;
+
+  width: 100%;
+
+  text-align: center;
+
+  background-color: #1d93ca;
+  
+  box-shadow: 0 0px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* sectionLatestProducts-articleflex-1 -> Left Spacer in Latest Products --> */
+.index-main-sectionLatestProducts-articleflex-1 {
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
+}
+
+/* sectionLatestProducts-articleflex-2 -> Center Content Box --> Content Flex Box in the centre of sectionLatestProducts */
+.index-main-sectionLatestProducts-articleflex-2 {
+  order: 0;
+  flex: 7 1 auto;
+  align-self: auto;
+}
+
+/* index-main-sectionLatestProducts-articleflex-2-sectionContainers -> Container for each product card -> Flex Box Container in Content Flex Box */
+.index-main-sectionLatestProducts-articleflex-2-sectionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+/* index-main-sectionLatestProducts-articleflex-2-sectionChild -> Cards for each Product--> Flex Box Child in Content Flex Box */
+.index-main-sectionLatestProducts-articleflex-2-sectionChild {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+
+  background-color: #ffffff;
+
+  max-width: 23em;
+  height: 25em;
+  margin: 1em;
+
+  padding-bottom: 0.3em;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* sectionChild:hover */
+.index-main-sectionLatestProducts-articleflex-2-sectionChild:hover {
+  box-shadow: 0 8px 14px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.23);
+
+  transform: scale(1.03);
+  transition: all .2s ease-in-out;
+}
+
+/* index-main-sectionLatestProducts-articleflex-2-sectionChild-img -> Images on the Cards for each Product--> Flex Box Child in Content Flex Box */
+.index-main-sectionLatestProducts-articleflex-2-sectionChild-img {
+  width: 100%;
+
+  margin-bottom: -1em;
+}
+
+/* sectionLatestProducts-articleflex-3 -> Right Spacer in Latest Products */
+.index-main-sectionLatestProducts-articleflex-3 {
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
+}
+
+/* sectionLatestProducts (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  #sectionLatestProducts{
+    margin-bottom: 0em;
+    margin-left: -1em;
+  
+    padding: 0.8em;
+  
+    width: 100%;
+  
+    text-align: center;
+  
+    background-color: #ffffff;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+}
+
+
+/* Images on the ARTICLEpic */
+.index-main-article-img {
+  width: 100%;
+
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+
+  margin-bottom: -1em;
+}
+
+/* Images in blog posts */
+.blog-img {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.portfolio-item-1 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+
+  max-width: 600px;
+}
+
+.portfolio-item-2 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+/* Images in portfolio posts (Desktop Examples) */
+.portfolio-img {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Images in portfolio posts (Mobile Examples) */
+.portfolio-img-mobile {
+  width: 100%;
+
+  border-radius: 0.6em;
+
+  margin-bottom: 1em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Images in portfolio posts (Mobile Examples) (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  .portfolio-img-mobile {
+    width: 40%;
+
+    border-radius: 0.6em;
+  
+    margin: auto;
+    margin-bottom: 1em;
+  
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+}
+
+/* Images in Cards */
+.index-main-card-img {
+  width: 90%;
+
+  border-radius: 0.4em;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Button (Article 1) */
+.index-main-article-button {
+  position: relative;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #1875d1;
+
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  
+  transition: background-color .2s;
+}
+
+/* Button (Article 1): HOVERED */
+.index-main-article-button:hover {
+  background-color: #005bb2;
+}
+
+/* H2 -> Welcome Card Titles */
+h2 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #029be5;
+}
+
+/* h2 -> H2 on the banner */
+#bannerH2 {
+  position: relative;
+
+  text-shadow: 0px 0px 3px #ffffff;
+
+  font-size: 2em;
+  font-weight: 300;
+
+  margin-top: 0em;
+}
+
+/* h2 -> H2 on the banner (Above 1024px) */
+@media only screen and (min-width: 1024px) {
+  #bannerH2 {
+    font-size: 4em;
+    font-weight: 300;
+  
+    margin-top: 0em;
+  }
+}
+
+/* h3 -> Small Titles */
+h3 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1.8em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #029be5;
+}
+
+/* section-title -> Section h4 Titles */
+.section-title {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1.8em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #ffffff !important; 
+}
+
+/* section-title -> Section h4 Titles Desktop */
+@media only screen and (min-width: 1024px) {
+  .section-title {
+    position: relative;
+
+    font-family: 'Roboto';
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: left;
+
+    left: 5%;
+  }
+}
+
+/* section-explore-title -> Section Explore h3 Titles */
+.section-explore-title {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1.8em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #000000 !important; 
+
+  margin: auto;
+  margin-bottom: 0.8em;
+
+}
+
+/* section-explore-title -> Section Explore h3 Titles Desktop */
+@media only screen and (min-width: 1024px) {
+  .section-explore-title {
+    position: relative;
+
+    font-family: 'Roboto';
+    font-size: 2.2em ;
+    font-weight: 500;
+    text-align: left;
+
+    width: 12em;
+    margin-bottom: 4.7em;
+
+  }
+}
+
+/* H4 -> Card Titles */
+h4 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1.35em;
+  font-weight: 500;
+  text-align: center;
+
+  color: #029be5;
+}
+
+/* H5 -> Prices */
+h5 {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 700;
+  text-align: right;
+
+  margin-right: 1.35em;
+
+  color: #FF9800;
+}
+
+/* H5 portfolio category -> Shows the user what type of project it is */
+.portfolio-category {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 700;
+  text-align: right;
+
+  margin-right: 1.35em;
+  margin-bottom: -0.2em;
+
+  color: #FF9800;
+}
+
+
+/* p -> Card Paragraphs */
+p {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+
+  color: #000000;
+}
+
+/* p -> Paragraph on the banner */
+#bannerP {
+  text-shadow: 0px 0px 3px #ffffff;
+
+  font-size: 2.4em;
+  font-weight: 300;
+
+  margin-top: 0em;
+  
+  color: #000000;
+}
+
+/* p -> ARTICLEpic Card Paragraphs */
+p.card-text {
+  position: relative;
+
+  margin: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+
+  color: #000000;
+
+  max-width: 90%;
+}
+
+/* p -> Paragraphs which are aligned to the left */
+p.left-text {
+  position: relative;
+
+  max-width: 95%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+
+  color: #000000;
+}
+
+/* p -> Only used in motivational quotes for the quotes */
+p.quote {
+  position: relative;
+
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+
+  color: #000000;
+}
+
+/* p -> Date text on blog entries */
+p.date-text {
+  position: relative;
+
+  margin-top: -1em;
+  margin-bottom: 0.3em;
+
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+
+  color: #036ea3;
+}
+
+hr {
+  border: none;
+  height: 1px;
+
+  color: #029be5; /* old IE */
+  background-color: #029be5; /* Modern Browsers */
+}
+
+footer {
+  position: relative;
+
+  bottom: -5em;
+  left: -3em;
+
+  margin-top: 2em;
+
+  width: 120%;
+  height: 3em;
+
+  padding: 1em;
+  padding-left: 4em;
+
+  /* background-color: #1dc1ca; */
+}
+
+.buy-form {
+  width: 100%;
+  height: 1450px;
+
+  margin: 0;
+
+  overflow: hidden;
+}
+
+/*SPANS */
+.span-blue {
+  color: #029be5;
+  font-weight: 600;
+}
+
+.span-focus {
+  color: #ab47bc;
+  font-weight: 600;
+}
+
+.span-offer {
+  color: #fc7318;
+  font-weight: 600;
+}
+
+li {
+  color: #029be5;
+}

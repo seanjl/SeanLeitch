@@ -179,3 +179,13 @@ footer {
 .article-date2 {
   color: #9c27b0;
 }
+
+hr {
+  border: 1px solid #ffeb3b;
+  margin-bottom: 1.5em;
+}
+
+/* Removes padding */
+.remove-padding {
+  padding: 0;
+}

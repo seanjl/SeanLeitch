@@ -6,11 +6,11 @@
 html {
   scroll-behavior: smooth;
   background: #0097a7;
-  background: linear-gradient(167deg, #6a1b9a 0%, #0097a7 83%);
+  background: linear-gradient(167deg, #a940c4 0%, #0097a7 83%);
 }
 
 nav {
-  background-color: #0097A7;
+  background-color: #a940c4;
   z-index: 100066 !important;
 }
 
@@ -181,7 +181,7 @@ footer {
 }
 
 hr {
-  border: 1px solid #ffeb3b;
+  border: 1px solid white;
   margin-bottom: 1.5em;
 }
 

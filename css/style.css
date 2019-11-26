@@ -201,6 +201,13 @@ hr {
   padding-bottom: 0;
 }
 
+/* max-width-90pc */
+.max-width-90pc {
+  max-width: 90%;
+  padding: 1em;
+}
+
+
 /* YouTube */
 .youtube-center {
   display: block;

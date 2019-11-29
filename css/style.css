@@ -15,6 +15,10 @@ nav {
   z-index: 100066 !important;
 }
 
+.nav-bar {
+  box-shadow: none;
+}
+
 /*Logo text in nav */
 .brand-logo {
 font-family: 'Roboto', sans-serif;

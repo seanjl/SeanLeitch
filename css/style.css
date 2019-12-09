@@ -238,3 +238,13 @@ hr {
 .nunito-font {
 	font-family: 'Nunito', sans-serif;
 }
+
+.img-center {
+  display: block;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 10em;
+}

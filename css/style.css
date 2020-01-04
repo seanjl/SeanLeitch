@@ -5,35 +5,61 @@
 
 html {
   scroll-behavior: smooth;
-  background: white;
+  background-color: #F2F2F2;
 }
 
 nav {
   position: fixed;
 
-  background-color: #a940c4;
+  background-color: #2196F3;
+  box-shadow: none !important; 
+
   z-index: 100066 !important;
 }
 
-.nav-bar {
-  box-shadow: none;
+/* Logo IMG in the header (Under 600px) */
+.header-logo {
+  display: none;
+}
+
+/*Logo IMG in the header (Above 600px) */
+@media only screen and (min-width: 600px) {
+  .header-logo {
+    display: inline-block;
+    max-height: 1.5em;
+    
+    margin-top: 0.6em;
+  }
 }
 
 /*Logo text in nav */
 .brand-logo {
-font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+	font-family: 'Nunito', sans-serif;
+  font-weight: 600;
   font-size: 2em !important; 
 }
 
-/* Header Title Text*/
-.header {
-	font-family: 'Nunito', sans-serif;
+/* Banner header Title Text*/
+.banner-header-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
 	font-weight: 800;
 }
 
-/* Image in the banner */
-.index-banner {
+/* Header text in Index Banner (Under 600px) */
+.banner-header-container {
+  height: 2.3em;
+}
+
+/* Header text in Index Banner (Above 600px) */
+@media only screen and (min-width: 600px) {
+  .banner-header-container {
+    height: 2em;
+  }
+}
+
+/* Video in the banner */
+#bannerVideo {
   position: fixed;
 
   right: 0;
@@ -45,14 +71,49 @@ font-family: 'Roboto', sans-serif;
   z-index: -1;
 }
 
+/* Line break */
+hr {
+  border-color: #1F88E5;
+  border-radius: 1px;
+  border-style: solid;
+}
+
+/* Grey line break */
+.hr-grey {
+  color: #F2F2F2;
+  background-color: #F2F2F2;
+  border: none;
+
+  height: 1.5em;
+}
+
 /* Container2: Content: contains everything bellow banneer and above footer */
 #container2-content {
-  background: transparent;
+  background-color: white;
+}
+
+/* Container2: Content: contains everything bellow banneer and above footer bluebg */
+#container2-content-bluebg {
+  background-color: #2196F3;
 }
 
 /* container2-subcontent: contains everything inside container 2.*/
 .container2-subcontent {
-  background-color: transparent;
+  background-color: #ffffff;
+}
+
+/* container2-subcontent: contains everything inside container 2. in portfolio page*/
+.container2-subcontent-portfolio {
+  margin-top: 2em;
+  background-color: #ffffff;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.blue-bg {
+  background-color: #2196F3;
 }
 
 /* row-container: each row inside container2-subcontent. */
@@ -114,20 +175,37 @@ footer {
   margin-top: 0; 
 }
 
+.btn-large {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
 .card {
   position: relative;
   margin: 2em;
+
+  box-shadow: none !important;
 }
 
 /* Hover over card to expand */
 .card:hover {
   transition: 0.2s ease-out;
-  transform: scale(1.03);
 }
 
 .card-margin {
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Google Form (handles orders) */
+.buy-form {
+  width: 100%;
+  height: 80em;
+
+  margin-top: 2em;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Small Image In Portfolio */
@@ -143,11 +221,25 @@ footer {
   align-content: center;
 }
 
-/* CUSTOM COLORS */
-.dark-grey-text {
-  color: #444444;
+/* Big Image In Portfolio */
+.portfolio-img2 {
+  position: relative;
+
+  max-width: 99%;
+
+  margin: auto;  
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  align-content: center;
+
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* CUSTOM COLORS */
 .dark-purple {
   background-color: #180C2E;
 }
@@ -164,12 +256,9 @@ footer {
   background: linear-gradient(-1deg, #FFCC80 0%, #FFCC80 87%, #ffffff 90%);
 }
 
-.nav-wrapper {
-  color: purple !important;
-}
 
 
-/* CUSTOM FONT-SIZES */
+/* CUSTOM FONTS */
 .h5-text-large-1 {
   font-size: 3em;
 }
@@ -179,72 +268,142 @@ footer {
   min-width: 100%;
 }
 
-.text-align-left {
-  text-align: left !important;
+h4 {
+  font-family: 'Nunito';
 }
 
-/* Article Date on blog home page */
-.article-date {
-  font-size: 0.8em;
-  color: #9c27b0;
+/* H5 rowcontainer explanation text */
+.h5-row {
+  font-family: 'Nunito';
+  font-weight: 300;
 }
 
-/* Article Date on each article page */
-.article-date2 {
-  color: #9c27b0;
+h5 {
+  font-family: 'Nunito';
 }
 
-hr {
-  border: 1px solid #9c27b0;
-  margin-bottom: 1.5em;
-}
-
-/* Removes padding */
-.remove-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* max-width-90pc */
-.max-width-90pc {
-  max-width: 90%;
-  padding: 1em;
+/* Get started & portfolio button */
+#download-button {
+  margin-top: 0.5em;
 }
 
 
-/* YouTube */
-.youtube-center {
+
+/* Max Widths */
+.max-width-1em {
+  max-width: 1em;
+}
+
+.max-width-2em {
+  max-width: 2em;
+}
+
+.max-width-3em {
+  max-width: 3em;
+}
+
+.max-width-4em {
+  max-width: 4em;
+}
+
+.max-width-5em {
+  max-width: 5em;
+}
+
+.max-width-6em {
+  max-width: 6em;
+}
+
+.max-width-7em {
+  max-width: 4em;
+}
+
+.max-width-8em {
+  max-width: 8em;
+}
+
+.max-width-9em {
+  max-width: 9em;
+}
+
+.max-width-10em {
+  max-width: 10em;
+}
+
+.max-width-11em {
+  max-width: 11em;
+}
+
+.max-width-12em {
+  max-width: 12em;
+}
+
+.max-width-13em {
+  max-width: 13em;
+}
+
+.max-width-14em {
+  max-width: 14em;
+}
+
+.max-width-15em {
+  max-width: 15em;
+}
+
+/* CARD COLORS */
+.card-purple {
+  background-color: #7e57c2 !important;
+}
+
+.card-dark-purple {
+  background-color: #4d2c91 !important;
+}
+
+.card-teal {
+  background-color: #00766c !important;
+}
+
+.card-dark-teal {
+  background-color: #00675b !important;
+}
+
+.card-orange {
+  background-color: #f57c00 !important;
+}
+
+.card-dark-orange {
+  background-color: #bb4d00 !important;
+}
+
+.card-indigo {
+  background-color: #5c6bc0 !important;
+}
+
+.card-dark-indigo {
+  background-color: #26418f !important;
+}
+
+.card-purple2 {
+  background-color: #ab47bc !important;
+}
+
+.card-dark-purple2 {
+  background-color: #790e8b !important;
+}
+
+/* COLORS */
+.background-grey {
+  background-color: #F2F2F2 !important;
+}
+
+.background-white {
+ background-color: #ffffff !important;
+}
+
+/* ALIGNMENT */
+.center-img {
   display: block;
-
-  width: 70%;
-  height: 450px;
-
-  margin: auto;
-}
-
-/* YouTube (Under 600px) */
-@media only screen and (max-width: 600px) {
-  .youtube-center {
-    display: block;
   
-    width: 100%;
-    height: 350px;
-  
-    margin: auto;
-  }
-}
-
-/* Nunito Font*/
-.nunito-font {
-	font-family: 'Nunito', sans-serif;
-}
-
-.img-center {
-  display: block;
-  position: relative;
-
   margin-left: auto;
   margin-right: auto;
-
-  width: 10em;
 }

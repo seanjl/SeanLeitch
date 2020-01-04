@@ -5,29 +5,271 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Sean Leitch</title>
+
+  <title>snowblock | Web Services Agency</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="aos/aos.css" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
-  <link href="aos/aos.css" rel="stylesheet">
 
+  <link href="aos/aos.css" rel="stylesheet">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
- <article>
-   <br><br><br>
-   <h1 class="center">Page under construction</h1>
-   <a href="http://bit.ly/Snowblock" class="center"><h3>Go to Snowblock Media</h3></a>
-   <img class="img-center" src="assets/sm-logo.png">
- </article>
+  <!-- Navigation Bar-->
+  <nav class="blue darken-1 nav-bar" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#index-banner" class="brand-logo"><i class="material-icons"><img class="header-logo"
+            src="assets/asset-logo.png"></i>snowblock</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#index-banner" class="white-text">Home</a></li>
+        <li><a href="#container2-content" class="white-text">Products</a></li>
+        <li><a href="portfolio.html" class="white-text">Portfolio</a></li>
+        <li><a href="#nav-buy" class="white-text">Buy</a></li>
+        <li><a href="#nav-about" class="white-text">About</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav blue">
+        <li><a href="#index-banner" class="white-text">Home</a></li>
+        <li><a href="#container2-content" class="white-text">Products</a></li>
+        <li><a href="portfolio.html" class="white-text">Portfolio</a></li>
+        <li><a href="#nav-buy" class="white-text">Buy</a></li>
+        <li><a href="#nav-about" class="white-text">About</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <br><br>
+
+  <!-- Container 1: Banner -->
+  <article class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <video autoplay muted loop id="bannerVideo">
+        <source src="assets/index-banner.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <h1 class="banner-header-text center blue-text banner-header-container">at snowblock media we
+        <span class="txt-rotate" data-period="2000" data-rotate='[ "build websites", "make apps", "create art" ]'>
+        </span>
+      </h1>
+
+      <div class="row center">
+        <hr>
+        <p class="col s12 flow-text light">We'll help you create an intuitive, beautiful and professional website which will make
+          you stand out over the rest!</p>
+      </div>
+
+      <div class="row center">
+        <a href="#container2-content" id="download-button" class="btn-large waves-effect waves-light blue darken-1">Get
+          Started</a>
+        <a href="portfolio.html" id="download-button" class="btn-large waves-effect waves-light blue darken-1">Our
+          Work</a>
+      </div>
+
+      <br><br>
+    </div>
+  </article>
+
+  <!-- Container 2: Content -->
+  <article id="container2-content">
+    <div class="section container2-subcontent">
+
+      <!--   Row Container 2: Services   -->
+      <div class="row section row-container">
+        <h4 class="col1 s12 m12 center blue-text ">our products</h4>
+
+        <br>
+
+        <!-- Row2 Width Limiter -->
+        <div class="row-width-limiter">
+
+          <!-- Row2-Column1: Custom Site -->
+          <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card card-purple">
+              <div class="card-content">
+                <img class="max-width-10em center-img" src="assets/index-products-customsite.png">
+                <br>
+                <span class="card-title white-text">Custom Website</span>
+                <p class="white-text">Website made to your specifications.</p>
+                <p class="white-text">It will give your website a polished online presence!</p>
+              </div>
+
+              <div class="card-action card-dark-purple">
+                <a href="#nav-buy" class="white-text">Buy</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Row2-Column2: Video -->
+          <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-content card-teal">
+                <img class="max-width-10em center-img" src="assets/index-products-app.png">
+                <br>
+                <span class="card-title white-text">Music Videos</span>
+                <p class="white-text">Recording and editing low-budget music videos.</p>
+                <p class="white-text">Bring your song to life cheaply with our help!</p>
+              </div>
+
+              <div class="card-action card-dark-teal">
+                <a href="#nav-buy" class="white-text">Buy</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Row2-Column3: Translation -->
+          <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <div class="card card-orange">
+              <div class="card-content">
+                <img class="max-width-10em center-img" src="assets/index-products-translation.png">
+                <br>
+                <span class="card-title white-text">Translation</span>
+                <p class="white-text">English to Spanish and Spanish to English translation of a website or document.
+                </p>
+                <p class="white-text">Expand your audience and userbase!</p>
+              </div>
+
+              <div class="card-action card-dark-orange">
+                <a href="#nav-buy" class="white-text">Buy</a>
+              </div>
+            </div>
+          </section>
+        </div> <!-- End Row2 WidthLimiter -->
+      </div> <!-- End RowContainer2-->
+
+      <hr class="hr-grey">
+
+      <!--   Row Container 3: Why choose us & Buy   -->
+      <div class="row row-container section">
+        <br>
+        <!-- Row3 Width Limiter2 (larger width allowed) -->
+        <div class="row-width-limiter2">
+
+          <!-- Row3-Column1: Why you Should Choose us -->
+          <section class="col s12 m6"  data-aos="fade-right">
+            <h4 class="col1 s12 m12 center blue-text darken-4">why choose us</h4>
+            <hr>
+            <!-- Low Cost -->
+            <div class="icon-block" data-aos="fade-up" data-aos-time="1500">
+              <h2 class="center orange-text"><i class="material-icons">attach_money</i></h2>
+              <h5 class="center orange-text">Low Cost</h5>
+
+              <p class="center light flow-text">We focus on creating elegant, professional sites and media at a low-cost
+                for small and medium businesses. </p>
+              <p class="center light flow-text">You will receive a high-quality project at an affordable price.</p>
+            </div>
+
+            <br>
+
+            <!-- User Experience Focused -->
+            <div class="icon-block" data-aos="zoom-in">
+              <h2 class="center orange-text"><i class="material-icons">insert_emoticon</i></h2>
+              <h5 class="center orange-text">User Experience Focused</h5>
+
+              <p class="center light flow-text">Our knowledge in UI design, image & video editing, SEO and accesibility
+                allows us to build appealing, well-structured sites and apps. This gives your business a polished look
+                and your clients will know they made the right decision by trusting you.</p>
+            </div>
+
+            <!-- Laptop Img -->
+            <div class="icon-block" data-aos="flip-up">
+              <img class="row1-column2-img" src="assets/row1-img.svg">
+            </div>
+          </section>
+
+          <!-- Row2-Column2: Form -->
+          <section class="col s12 m6" id="nav-buy" data-aos="fade-left">
+            <h4 class="col1 s12 m12 center blue-text darken-4 ">request a project</h4>
+            <hr>
+            <div class="icon-block">
+              <h2 class="center orange-text"><i class="material-icons">shopping_cart</i></h2>
+              <h5 class="col1 s12 m12 center orange-text ">Buy</h5>
+              <div class="iframe-container"></div>
+              <iframe class="buy-form" id="requestQuote"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdKciHDFwFVux_MCi8jtPCzGqyITs4M-l3AnxasPGAFesPzrA/viewform?embedded=true"
+                frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+          </section>
+        </div>
+      </div> <!-- END RowContainer3-->
+
+      <hr class="hr-grey" id="nav-about">
+      <!--   Row Container 4: About   -->
+      <div class="row section row-container">
+        <h4 class="col1 s12 m12 center blue-text ">about snowblock</h4>
+        <br>
+        <!-- Row4 Width Limiter -->
+        <div class="row-width-limiter">
+
+          <!-- Row4-Column1: SnowblockFlag -->
+          <section class="col s12 m4 card-margin" data-aos="zoom-in">
+            <img class="max-width-10em center-img" src="assets/asset-logo.png">
+          </section>
+
+          <!-- Row2-Column2: Website to App -->
+          <section class="col s12 m8 card-margin" data-aos="zoom-in">
+            <p class="black-text flow-text light">Snowblock Media is a creative agency founded by Sean Leitch.</p>
+            <p class="black-text flow-text light">We create websites, music videos, apps and other media content.</p>
+
+          </section>
+        </div>
+      </div> <!-- End RowContainer4 -->
+    </div> <!-- END container2-subcontent-->
+  </article> <!-- END container2-content-->
+
+  <!-- Footer -->
+  <footer class="page-footer blue" id="row-footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">about us</h5>
+          <p class="grey-text text-lighten-4">Snowblock Media is a web design & development agency based in Madrid,
+            founded by Sean Leitch.</p>
+          <p class="grey-text text-lighten-4">We create elegant, professional sites at a low-cost for small and medium
+            businesses as well as smaller projects such as mobile app development, English/Spanish translations, video
+            editing and more!</p>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">contact</h5>
+          <ul>
+            <li><a class="white-text" href="mailto:snowblock@consultant.com?Subject=Contact%20snowblock"
+                target="_top">Email</a></li>
+            <li><a class="white-text" href="https://join.skype.com/invite/nQXeJr7KJDfs">Skype</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/snowblockmedia/">Instagram</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/seanjleitch/">Instagram (Sean Leitch)</a></li>
+            <li><a class="white-text" href="https://github.com/seanjl/">GitHub</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/seanjleitch/">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">more</h5>
+          <ul>
+            <li><a class="white-text" href="#index-banner">Home</a></li>
+            <li><a class="white-text" href="http://bit.ly/seanleitch">Sean Leitch</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="blue-text text-lighten-3" href="https://github.com/seanjl">Sean Leitch</a>
+      </div>
+    </div>
+  </footer>
 
 
   <!--  Scripts: Materialize-->
@@ -41,6 +283,66 @@
     AOS.init({
       duration: 700,
     });
+  </script>
+
+  <!-- Scripts: H1 Animation-->
+  <script type="text/javascript">
+    var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 230 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #2196F3 }";
+      document.body.appendChild(css);
+    };
   </script>
 </body>
 

@@ -350,6 +350,11 @@ h5 {
   max-width: 15em;
 }
 
+.max-width-100pc {
+  max-width: 100%;
+}
+
+
 /* CARD COLORS */
 .card-purple {
   background-color: #7e57c2 !important;
@@ -357,6 +362,10 @@ h5 {
 
 .card-dark-purple {
   background-color: #4d2c91 !important;
+}
+
+.card-yellow {
+  background-color: #fdd835 !important;
 }
 
 .card-teal {
@@ -368,7 +377,7 @@ h5 {
 }
 
 .card-orange {
-  background-color: #f57c00 !important;
+  background-color: #ff9800 !important;
 }
 
 .card-dark-orange {

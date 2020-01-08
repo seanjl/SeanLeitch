@@ -5,7 +5,11 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #F2F2F2;
+}
+
+body {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(106,27,154,1) 82%, rgba(106,27,154,1) 100%);
 }
 
 nav {
@@ -46,6 +50,12 @@ nav {
 	font-weight: 800;
 }
 
+/* Container 1: Banner Section */ /* OBSOLETE */
+.banner-section {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(106,27,154,1) 65%);
+}
+
 /* Header text in Index Banner (Under 600px) */
 .banner-header-container {
   height: 2.3em;
@@ -73,13 +83,13 @@ nav {
 
 /* Line break */
 hr {
-  border-color: #1F88E5;
+  border-color: #ffffff;
   border-radius: 1px;
   border-style: solid;
 }
 
 /* Grey line break */
-.hr-grey {
+hr-grey {
   color: #F2F2F2;
   background-color: #F2F2F2;
   border: none;

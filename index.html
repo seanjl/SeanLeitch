@@ -25,8 +25,7 @@
   <!-- Navigation Bar-->
   <nav class="purple darken-3 nav-bar" role="navigation">
     <div class="nav-wrapper container">
-      <a href="#index-banner" class="brand-logo"><i class="material-icons"><img class="header-logo"
-            src="assets/asset-logo.png"></i>sean leitch</a>
+      <a href="#index-banner" class="brand-logo"></i>sean leitch</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#index-banner" class="white-text">Home</a></li>
         <li><a href="#nav-row2-webdev" class="white-text">Web Dev</a></li>
@@ -50,55 +49,57 @@
 
   <br><br>
 
-  <!-- Container 1: Banner -->
-  <article class="section no-pad-bot transparent" id="index-banner">
+  <!-- Article1: Banner -->
+  <article class="section no-pad-bot transparent container1" id="index-banner">
+    <!-- Article1Row1: Banner -->
     <div class="container">
       <br><br>
 
       <h1 class="banner-header-text center white-text darken-3">welcome to my site</h1>
 
-      <h1 class="banner-header-text center white-text darken-3 banner-header-container">I enjoy 
+      <h1 class="banner-header-subtext center white-text darken-3 banner-header-container">I enjoy 
         <span class="txt-rotate" data-period="1800" data-rotate='[ "building websites", "editing videos", "learning", "making music", "travelling", "creating apps" ]'>
         </span>
       </h1>
-      <br><br>
+
+      <br>
     </div>
+
+    <!-- Article1Row2: About Me   -->
+    <div class="row section row-container transparent">
+      <!-- Article1Row2 Width Limiter -->
+      <div class="row-width-limiter">
+
+        <!-- Article1Row2-Column1: Pic of Me -->
+        <section class="col s12 m4 card-margin" data-aos="zoom-in">
+          <img class="max-width-15em center-img-shadow" src="assets/index-img-me1.jpg">
+        </section>
+
+        <!-- Article1Row2-Column2: Intro Text -->
+        <section class="col s12 m8 card-margin" data-aos="zoom-in">
+          <p class="white-text flow-text light text-shadow">I'm a 19 year old web developer and student at the European University of Madrid</p>
+          <p class="white-text flow-text light text-shadow">I create websites, music videos, apps and other media content</p>
+        </section>
+      </div> <!-- End Article1Row2 Width Limiter -->
+    </div> <!-- End Article1Row2: About Me -->
+    <br><br><br><br>
   </article>
 
-  <!-- Container 2: Content -->
+  <!-- Article2: Content -->
   <article id="container2-content transparent">
     <div class="section container2-subcontent transparent">
-      <!--   Row Container 1: About Me   -->
-      <div class="row section row-container transparent">
-        <h4 class="col1 s12 m12 center yellow-text ">who am I?</h4>
-        <br>
-        <!-- Row4 Width Limiter -->
-        <div class="row-width-limiter">
 
-          <!-- Row4-Column1: Pic of Me -->
-          <section class="col s12 m4 card-margin">
-            <img class="max-width-15em center-img-shadow" src="assets/index-img-me1.jpg">
-          </section>
-
-          <!-- Row2-Column2: Intro Text -->
-          <section class="col s12 m8 card-margin">
-            <p class="white-text flow-text light">I'm a 19 year old web developer and student at the European University of Madrid</p>
-            <p class="white-text flow-text light">I create websites, music videos, apps and other media content</p>
-          </section>
-        </div>
-      </div> <!-- End RowContainer1 -->
-
-      <!--   Row Container 2: websites   -->
+      <!--  Article2 Row Container 2: websites   -->
       <div id="nav-row2-webdev" class="row section row-container">
-        <h4 class="col1 s12 m12 center yellow-text">web development</h4>
         <br>
-        <!-- Row2 Width Limiter -->
+        <h4 class="col1 s12 m12 center purple-text">web development</h4>
+        <br>
+        <!-- Article2 Row2 Width Limiter -->
         <div class="row-width-limiter">
 
           <!-- Row2-Column1: Web Dev Text -->
           <section class="col s12 m8 card-margin" data-aos="zoom-in">
-            <p class="black-text flow-text light">Designing and developing websites is one of my passions. I prefer front-end development and know HTML, CSS and several frameworks, including Materialize.</p>
-            <p class="black-text flow-text light">I've been making websites as a freelancer since 2019.</p>
+            <p class="black-text flow-text light">I enjoy designing and developing websites. I prefer front-end development and know HTML, CSS and several frameworks, including Materialize.</p>
             <p class="black-text flow-text light">Around half of all web traffic comes from mobile devices, which is why my websites are responsive and mobile friendly.</p>
             <p class="black-text flow-text light">Having a beautiful and intuitive website gives your business a polished online presence!</p>
           </section>
@@ -115,18 +116,17 @@
               </div>
 
               <div class="card-action card-yellow">
-                <a href="#nav-buy" class="black-text">See Website</a>
+                <a href="http://Vandersurreformas.com/" class="black-text">See Website</a>
               </div>
             </div>
           </section>
         </div> <!-- End Row2 WidthLimiter -->
       </div> <!-- End RowContainer2-->
 
-      <hr class="hr-grey">
-
       <!--   Row Container 3: videos   -->
-      <div id="nav-row3-videos" class="row section row-container">
-        <h4 class="col1 s12 m12 center purple-text ">video editing</h4>
+      <div id="nav-row3-videos" class="row section row-container text-lighten-4 section-whiteToteal">
+        <br><br><br><br><br><br>
+        <h4 class="col1 s12 m12 center white-text">video editing</h4>
         <br>
         <!-- Row3 Width Limiter -->
         <div class="row-width-limiter">
@@ -146,26 +146,25 @@
 
           <!-- Row3-Column2: Video Editing Text -->
           <section class="col s12 m8 card-margin" data-aos="zoom-in">
-            <p class="black-text flow-text light">I love creating art, and video editing is one of my hobbies.</p>
-            <p class="black-text flow-text light">I started editing videos when I was a kid using Windows Movie Maker, later picking up Camtasia Studio. Now I use Adobe Premiere to turn my imagination into reality.</p>
-            <p class="black-text flow-text light">So far I've only published music videos, but I have many more projects planned for the future!</p>
+            <p class="white-text flow-text light">I love creating art, and video editing is one of my hobbies.</p>
+            <p class="white-text flow-text light">I started editing videos when I was a kid using Windows Movie Maker, later picking up Camtasia Studio. Now I use Adobe Premiere to turn my imagination into reality.</p>
+            <p class="white-text flow-text light">So far I've only published music videos, but I have many more projects planned for the future!</p>
           </section>
         </div> <!-- End Row3 WidthLimiter -->
       </div> <!-- End RowContainer3-->
 
-      <hr class="hr-grey">
-
       <!--   Row Container 4: Music   -->
-      <div id="nav-row4-music" class="row section row-container">
-        <h4 class="col1 s12 m12 center purple-text ">music</h4>
+      <div id="nav-row4-music" class="row section row-container section-tealTowhite">
+        <br><br><br><br><br>
+        <h4 class="col1 s12 m12 center blue-text darken-3">music</h4>
         <br>
         <!-- Row2 Width Limiter -->
         <div class="row-width-limiter">
 
           <!-- Row2-Column1: Music Text -->
           <section class="col s12 m8 card-margin" data-aos="zoom-in">
-            <p class="black-text flow-text light">I have a passion for music, especially hip-hop. Recently I decided to start making music myself.</p>
-            <p class="black-text flow-text light">Using FL Studio, I'm learning how to make beats.</p>
+            <p class="black-text flow-text light">I love hip-hop and recently I decided to start making music myself.</p>
+            <p class="black-text flow-text light">I'm playing around on FL Studio, making beats and trying out new sounds.</p>
             <p class="black-text flow-text light">I produce music under the name "Big Kalo", and upload my work to Snowblock Media.</p>
           </section>
 
@@ -177,11 +176,11 @@
           </section>
         </div> <!-- End Row2 WidthLimiter -->
       </div> <!-- End RowContainer2-->
-      <hr class="hr-grey">
 
       <!--   Row Container 5: Java   -->
-      <div id="nav-row5-java" class="row section row-container">
-        <h4 class="col1 s12 m12 center purple-text ">java</h4>
+      <div id="nav-row5-java" class="row section row-container orange lighten-3">
+        <br>
+        <h4 class="col1 s12 m12 center black-text ">java</h4>
         <br>
         <!-- Row3 Width Limiter -->
         <div class="row-width-limiter">
@@ -189,7 +188,7 @@
           <!-- Row3-Column1: Java Img -->
           <section class="col s12 m4 card-margin" data-aos="zoom-in">
             <div class="card">
-              <div class="card-content card-orange">
+              <div class="card-content card-orange lighten-3">
                 <img class="max-width-10em center-img shadow-round" src="assets/index-img-javalogo.png">
               </div>
             </div>
@@ -197,16 +196,15 @@
 
           <!-- Row3-Column2: Java Description -->
           <section class="col s12 m8 card-margin" data-aos="zoom-in">
-            <p class="black-text flow-text light">I'm studying software development at the European University of Madrid, where I'm learning Java.</p>
-            <p class="black-text flow-text light">In order to keep track of my progress, I'm uploading some of the code I write to my website.</p>
+            <p class="black-text flow-text light">I'm studying software development at the European University of Madrid.</p>
+            <p class="black-text flow-text light">You can find java exercises and problems as well as links to helpful learning resources on this page.</p>
           </section>
         </div> <!-- End Row3 WidthLimiter -->
       </div> <!-- End RowContainer3-->
 
-      <hr class="hr-grey" id="nav-about">
-
       <!--   Row Container 6: About   -->
-      <div class="row section row-container">
+      <div class="row section row-container" id="nav-about">
+        <br>
         <h4 class="col1 s12 m12 center purple-text ">about me</h4>
         <br>
         <!-- Row4 Width Limiter -->
@@ -221,7 +219,7 @@
           <section class="col s12 m8 card-margin" data-aos="zoom-in">
             <p class="black-text flow-text light">I'm a 19 year old web developer and student at the European University of Madrid.</p>
             <p class="black-text flow-text light">I'm fluent in both Spanish and English (CEFR C2).</p>
-            <p class="black-text flow-text light">I like reading, lifting, running, travelling and learning about the world.</p>
+
           </section>
         </div>
       </div> <!-- End RowContainer4 -->

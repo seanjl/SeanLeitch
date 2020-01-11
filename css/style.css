@@ -8,17 +8,8 @@ html {
 }
 
 body {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 75%, rgba(106,27,154,1) 82%, rgba(106,27,154,1) 100%);
-}
-
-/* Body (Above 600px) */
-@media only screen and (min-width: 600px) {
-  body {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(106,27,154,1) 82%, rgba(106,27,154,1) 100%);
-  }
-}
+  background-color: white;
+ }
 
 nav {
   position: fixed;
@@ -44,6 +35,12 @@ nav {
   }
 }
 
+/* Container1: Banner */
+.container1 {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgba(106,27,154,1) 62%, rgba(106,27,154,1) 100%);
+}
+
 /*Logo text in nav */
 .brand-logo {
 	font-family: 'Nunito', sans-serif;
@@ -54,14 +51,15 @@ nav {
 /* Banner header Title Text*/
 .banner-header-text {
   font-family: 'Nunito', sans-serif;
-  font-size: 3em;
+  font-size: 4em;
 	font-weight: 800;
 }
 
-/* Container 1: Banner Section */ /* OBSOLETE */
-.banner-section {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(106,27,154,1) 65%);
+/* Banner header Title SubText*/
+.banner-header-subtext {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
+	font-weight: 400;
 }
 
 /* Header text in Index Banner (Under 600px) */
@@ -98,8 +96,8 @@ hr {
 
 /* Grey line break */
 hr-grey {
-  color: #F2F2F2;
-  background-color: #F2F2F2;
+  color: #00000000;
+  background-color: #00000000;
   border: none;
 
   height: 1.5em;
@@ -138,7 +136,7 @@ hr-grey {
 .row-container {
   margin-bottom: -20px; /* This cancels the margin bottom property in Materialize's "row" class. */
   margin-top: -20px; 
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 } 
 
 /* Row1Column1 */
@@ -395,7 +393,7 @@ h5 {
 }
 
 .card-orange {
-  background-color: #ff9800 !important;
+  background-color: #ffbd5b !important;
 }
 
 .card-dark-orange {
@@ -416,6 +414,20 @@ h5 {
 
 .card-dark-purple2 {
   background-color: #790e8b !important;
+}
+
+.section-whiteToteal {
+  background: rgb(255,255,255);
+  background: linear-gradient(2deg, #009688 0%, #009688 85%, #ffffff 87%, #ffffff 100%);
+}
+
+.section-tealTowhite {
+  background: rgb(255,255,255);
+  background: linear-gradient(2deg, #ffffff 0%, #ffffff 85%, #009688 87%, #009688 100%);
+}
+
+.text-yellow {
+  color: #fdd835 !important;
 }
 
 /* COLORS */
@@ -451,4 +463,9 @@ h5 {
 
   border-radius: 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Text Shadow */
+.text-shadow {
+  text-shadow: 1px 1px 4px #000000;
 }

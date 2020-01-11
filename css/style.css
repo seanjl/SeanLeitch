@@ -303,12 +303,9 @@ h5 {
 }
 
 /* PADDINGS */
-.padding-bottom-10em {
-  padding-bottom: 10em;
-}
-
-.padding-top-10em {
-  padding-top: 10em;
+.padding-tb-15em {
+  padding-top: 13em;
+  padding-bottom: 13em;
 }
 
 /* Max Widths */
@@ -422,6 +419,7 @@ h5 {
   background-color: #790e8b !important;
 }
 
+/* Section Gradient Backgrounds */ 
 .section-whiteToTealToWhite {
   background: rgb(255,255,255);
   background: linear-gradient(2deg, #ffffff 0%, #ffffff 13%, #009688 16%, #009688 85%, #ffffff 87%, #ffffff 100%);
@@ -431,7 +429,6 @@ h5 {
   background: rgb(255,255,255);
   background: linear-gradient(-2deg, #ffffff 0%, #ffffff 13%, #ffbd5b 16%, #ffbd5b 85%, #ffffff 87%, #ffffff 100%);
 }
-
 
 .text-yellow {
   color: #fdd835 !important;

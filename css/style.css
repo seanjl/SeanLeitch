@@ -136,7 +136,6 @@ hr-grey {
 .row-container {
   margin-bottom: -20px; /* This cancels the margin bottom property in Materialize's "row" class. */
   margin-top: -20px; 
-  padding-bottom: 30px;
 } 
 
 /* Row1Column1 */
@@ -303,7 +302,14 @@ h5 {
   margin-top: 0.5em;
 }
 
+/* PADDINGS */
+.padding-bottom-10em {
+  padding-bottom: 10em;
+}
 
+.padding-top-10em {
+  padding-top: 10em;
+}
 
 /* Max Widths */
 .max-width-1em {
@@ -416,15 +422,16 @@ h5 {
   background-color: #790e8b !important;
 }
 
-.section-whiteToteal {
+.section-whiteToTealToWhite {
   background: rgb(255,255,255);
-  background: linear-gradient(2deg, #009688 0%, #009688 85%, #ffffff 87%, #ffffff 100%);
+  background: linear-gradient(2deg, #ffffff 0%, #ffffff 13%, #009688 16%, #009688 85%, #ffffff 87%, #ffffff 100%);
 }
 
-.section-tealTowhite {
+.section-whiteToOrangeTowhite {
   background: rgb(255,255,255);
-  background: linear-gradient(2deg, #ffffff 0%, #ffffff 85%, #009688 87%, #009688 100%);
+  background: linear-gradient(-2deg, #ffffff 0%, #ffffff 13%, #ffbd5b 16%, #ffbd5b 85%, #ffffff 87%, #ffffff 100%);
 }
+
 
 .text-yellow {
   color: #fdd835 !important;

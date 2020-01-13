@@ -1,5 +1,5 @@
 /* seanLeitch WEBSITE, Written by Sean Leitch */
-/* LAST UPDATED: 04-JAN-2020 */
+/* LAST UPDATED: 13-JAN-2020 */
 /* FIRST WRITTEN: 10-JUL-2019 */
 /* MATERIALIZE FRAMEWORK in use */
 
@@ -303,9 +303,19 @@ h5 {
 }
 
 /* PADDINGS */
-.padding-tb-15em {
+.padding-tb-3em {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.padding-tb-13em {
   padding-top: 13em;
   padding-bottom: 13em;
+}
+
+/* MARGINS */
+.margin-b-2em {
+  margin-bottom: 2em;
 }
 
 /* Max Widths */
@@ -373,6 +383,9 @@ h5 {
   max-width: 100%;
 }
 
+.max-width-50pc {
+  max-width: 50%;
+}
 
 /* CARD COLORS */
 .card-purple {
@@ -451,6 +464,16 @@ h5 {
   margin-right: auto;
 }
 
+/* BLOCK ALIGNMENT */
+.center-block {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
 /* IMG ALIGNMENT with shadow */
 .center-img-shadow {
   display: block;
@@ -471,5 +494,5 @@ h5 {
 
 /* Text Shadow */
 .text-shadow {
-  text-shadow: 1px 1px 4px #000000;
+  text-shadow: 1px 1px 5px #000000;
 }

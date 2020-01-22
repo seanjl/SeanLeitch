@@ -35,9 +35,20 @@ nav {
   }
 }
 
-/* Container1: Banner */
-.container1 {
+/* Article1: Header */
+.header {
+  display: block;
   
+}
+
+/* Article1: Header Image */
+.header-image {
+  display: block;
+  position: relative;
+
+  right: 0;
+  
+  overflow-y: hidden;
 }
 
 /*Logo text in nav */
@@ -376,6 +387,26 @@ h5 {
 
 .max-width-15em {
   max-width: 15em;
+}
+
+.max-width-16em {
+  max-width: 16em;
+}
+
+.max-width-17em {
+  max-width: 17em;
+}
+
+.max-width-18em {
+  max-width: 18em;
+}
+
+.max-width-19em {
+  max-width: 19em;
+}
+
+.max-width-20em {
+  max-width: 20em;
 }
 
 .max-width-100pc {

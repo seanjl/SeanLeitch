@@ -386,6 +386,10 @@ h5 {
   max-width: 50%;
 }
 
+.total-width-100pc {
+  width: 100%;
+}
+
 /* CARD COLORS */
 .card-purple {
   background-color: #7e57c2 !important;

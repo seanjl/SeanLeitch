@@ -102,6 +102,17 @@ hr-grey {
   height: 1.5em;
 }
 
+/* Purple line break */
+.hr-purple {
+  border-color: #6A1B9A;
+
+  height: 1.5em;
+
+  border-radius: 1px;
+  border-style: solid;
+}
+
+
 /* Container2: Content: contains everything bellow banneer and above footer */
 #container2-content {
   background-color: white;

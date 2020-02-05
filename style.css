@@ -260,7 +260,7 @@ footer {
 
 
 
-/* CUSTOM COLORS */
+/* CUSTOM BG COLORS */
 .dark-purple {
   background-color: #180C2E;
 }
@@ -277,7 +277,10 @@ footer {
   background: linear-gradient(-1deg, #FFCC80 0%, #FFCC80 87%, #ffffff 90%);
 }
 
-
+/* CUSTOM FONT COLOURS */
+.darkpurple-text {
+  color: #4a148c;
+}
 
 /* CUSTOM FONTS */
 .h5-text-large-1 {
@@ -287,6 +290,10 @@ footer {
 .p-text-large-1 {
   font-size: 1.5em;
   min-width: 100%;
+}
+
+.heavy {
+  font-weight: 600 !important;
 }
 
 h4 {
@@ -308,7 +315,7 @@ h5 {
   margin-top: 0.5em;
 }
 
-/* PADDINGS */
+/* CUSTOM PADDINGS */
 .padding-tb-3em {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -319,7 +326,7 @@ h5 {
   padding-bottom: 13em;
 }
 
-/* MARGINS */
+/* CUSTOM MARGINS */
 .margin-b-2em {
   margin-bottom: 2em;
 }

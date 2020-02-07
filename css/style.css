@@ -284,6 +284,15 @@ footer {
 
 
 /* CUSTOM FONTS */
+.text-date {
+  font-size: 0.8em;
+  color: purple;
+}
+
+.text-heavy {
+  font-weight: 600;
+}
+
 .h5-text-large-1 {
   font-size: 3em;
 }
@@ -312,7 +321,9 @@ h5 {
   margin-top: 0.5em;
 }
 
-/* PADDINGS */
+
+
+/* CUSTOM PADDINGS */
 .padding-tb-3em {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -323,12 +334,12 @@ h5 {
   padding-bottom: 13em;
 }
 
-/* MARGINS */
+/* CUSTOM MARGINS */
 .margin-b-2em {
   margin-bottom: 2em;
 }
 
-/* Max Widths */
+/* CUSTOM Max Widths */
 .max-width-1em {
   max-width: 1em;
 }
@@ -417,7 +428,8 @@ h5 {
   max-width: 50%;
 }
 
-/* CARD COLORS */
+
+/* CUSTOM CARD COLORS */
 .card-purple {
   background-color: #7e57c2 !important;
 }

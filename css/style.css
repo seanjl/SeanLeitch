@@ -1,5 +1,5 @@
 /* seanLeitch WEBSITE, Written by Sean Leitch */
-/* LAST UPDATED: 13-JAN-2020 */
+/* LAST UPDATED: 19-FEB-2020 */
 /* FIRST WRITTEN: 10-JUL-2019 */
 /* MATERIALIZE FRAMEWORK in use */
 
@@ -233,6 +233,24 @@ footer {
   overflow-y: hidden;
 }
 
+/* IMAGE 30% width */
+.img-30pc-wd {
+  display: block;
+  position: relative;
+
+  max-width: 30%;
+  margin: auto;
+}
+
+/* IMAGE 100% width */
+.img-100pc-wd {
+  display: block;
+  position: relative;
+
+  max-width: 100%;
+  margin: auto;
+}
+
 /* Small Image In Portfolio */
 .portfolio-img {
   position: relative;
@@ -287,6 +305,11 @@ footer {
 .text-date {
   font-size: 0.8em;
   color: purple;
+}
+
+.highlight-blue {
+  color: #3366cc;
+  font-weight: 400;
 }
 
 .text-heavy {

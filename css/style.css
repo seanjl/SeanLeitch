@@ -61,13 +61,57 @@ nav {
 .banner-header-text {
   font-family: 'Nunito', sans-serif;
   font-size: 4em;
-	font-weight: 800;
+  font-weight: 800;
 }
 
 /* Banner header Title Text BG*/
-.banner-header-text-bg {
-  background-color:#FFFF00;
+.banner-header-text-bg-cyan {
+  background-color:#0BE6AF;
+
+  padding-left: 1%;
+  padding-right: 1%;;
 }
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-violet {
+  background-color:#7E57C2;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-purple {
+  background-color:#6A1B9A;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-orange {
+  background-color:#FF9800;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-blue {
+  background-color:#2196F3;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-teal {
+  background-color:#00766C;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
 
 /* Banner header Title SubText*/
 .banner-header-subtext {

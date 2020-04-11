@@ -545,6 +545,14 @@ h5 {
   background-color: #790e8b !important;
 }
 
+.card-grey-bcs {
+  background-color: #EAEAEA !important;
+}
+
+.card-grey-bcs-light {
+  background-color: #f8f8f8 !important;
+}
+
 /* Section Gradient Backgrounds */ 
 .section-whiteToTealToWhite {
   background: rgb(255,255,255);

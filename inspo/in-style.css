@@ -137,6 +137,7 @@ header {
 
 /* Removes underline from links */
 a {
+  color: #207DD6;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;

@@ -105,8 +105,24 @@ nav {
 }
 
 /* Banner header Title Text BG*/
+.banner-header-text-bg-darkblue {
+  background-color:#004883;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
 .banner-header-text-bg-teal {
   background-color:#00766C;
+
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+/* Banner header Title Text BG*/
+.banner-header-text-bg-green {
+  background-color:#17721a;
 
   padding-left: 0.8em;
   padding-right: 0.8em;

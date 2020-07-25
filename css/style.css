@@ -315,6 +315,16 @@ footer {
   margin: auto;
 }
 
+/* IMAGE 100% width contained */
+.img-100pc-wd {
+  display: block;
+  position: relative;
+
+  max-width: 50%;
+  object-fit: contain;
+  margin: auto;
+}
+
 /* Small Image In Portfolio */
 .portfolio-img {
   position: relative;

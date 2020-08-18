@@ -1,652 +1,731 @@
 /* seanLeitch WEBSITE, Written by Sean Leitch */
+
+
 /* LAST UPDATED: 19-FEB-2020 */
+
+
 /* FIRST WRITTEN: 10-JUL-2019 */
+
+
 /* MATERIALIZE FRAMEWORK in use */
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: white;
- }
+    background-color: white;
+}
 
 nav {
-  position: fixed;
-
-  background-color: #2196F3;
-  box-shadow: none !important; 
-
-  z-index: 100066 !important;
+    position: fixed;
+    background-color: #2196F3;
+    box-shadow: none !important;
+    z-index: 100066 !important;
 }
+
 
 /* Logo IMG in the header (Under 600px) */
+
 .header-logo {
-  display: none;
+    display: none;
 }
+
 
 /*Logo IMG in the header (Above 600px) */
+
 @media only screen and (min-width: 600px) {
-  .header-logo {
-    display: inline-block;
-    max-height: 1.5em;
-    
-    margin-top: 0.6em;
-  }
+    .header-logo {
+        display: inline-block;
+        max-height: 1.5em;
+        margin-top: 0.6em;
+    }
 }
+
 
 /* Article1: Header */
+
 .header {
-  display: block;
+    display: block;
 }
+
 
 /* Article1: Header Image */
-.header-image {
-  display: block;
-  position: relative;
 
-  right: 0;
-  
-  overflow-y: hidden;
+.header-image {
+    display: block;
+    position: relative;
+    right: 0;
+    overflow-y: hidden;
 }
+
 
 /*Logo text in nav */
+
 .brand-logo {
-	font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 2em !important; 
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 2em !important;
 }
+
 
 /* Banner header Title Text*/
+
 .banner-header-text {
-  font-family: 'Nunito', sans-serif;
-  font-size: 4em;
-  font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4em;
+    font-weight: 800;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-cyan {
-  background-color:#0BE6AF;
-
-  padding-left: 1%;
-  padding-right: 1%;;
+    background-color: #0BE6AF;
+    padding-left: 1%;
+    padding-right: 1%;
+    ;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-violet {
-  background-color:#7E57C2;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #7E57C2;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-purple {
-  background-color:#6A1B9A;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #6A1B9A;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-orange {
-  background-color:#FF9800;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #FF9800;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-blue {
-  background-color:#2196F3;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #2196F3;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-darkblue {
-  background-color:#004883;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #004883;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-teal {
-  background-color:#00766C;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #00766C;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
+
 /* Banner header Title Text BG*/
+
 .banner-header-text-bg-green {
-  background-color:#17721a;
-
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    background-color: #17721a;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
+
 
 /* Banner header Title Text BG*/
-.banner-header-text-bg-green-light {
-  background-color:#4c9a1b;
 
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+.banner-header-text-bg-green-light {
+    background-color: #4c9a1b;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
+
 
 /* Banner header Title SubText*/
+
 .banner-header-subtext {
-  font-family: 'Nunito', sans-serif;
-  font-size: 3em;
-	font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
 }
+
 
 /* Header text in Index Banner (Under 600px) */
+
 .banner-header-container {
-  height: 2.3em;
+    height: 2.3em;
 }
+
 
 /* Header text in Index Banner (Above 600px) */
+
 @media only screen and (min-width: 600px) {
-  .banner-header-container {
-    height: 2em;
-  }
+    .banner-header-container {
+        height: 2em;
+    }
 }
+
 
 /* Video in the banner */
+
 #bannerVideo {
-  position: fixed;
-
-  right: 0;
-  bottom: 0;
-
-  min-width: 100%; 
-  min-height: 100%; 
-
-  z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
+
 
 /* Line break */
+
 hr {
-  border-color: #ffffff;
-  border-radius: 1px;
-  border-style: solid;
+    border-color: #ffffff;
+    border-radius: 1px;
+    border-style: solid;
 }
+
 
 /* Grey line break */
-hr-grey {
-  color: #00000000;
-  background-color: #00000000;
-  border: none;
 
-  height: 1.5em;
+hr-grey {
+    color: #00000000;
+    background-color: #00000000;
+    border: none;
+    height: 1.5em;
 }
+
 
 /* Container2: Content: contains everything bellow banneer and above footer */
+
 #container2-content {
-  background-color: white;
+    background-color: white;
 }
+
 
 /* Container2: Content: contains everything bellow banneer and above footer bluebg */
+
 #container2-content-bluebg {
-  background-color: #2196F3;
+    background-color: #2196F3;
 }
+
 
 /* container2-subcontent: contains everything inside container 2.*/
+
 .container2-subcontent {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
+
 /* container2-subcontent: contains everything inside container 2. in portfolio page*/
+
 .container2-subcontent-portfolio {
-  margin-top: 2em;
-  background-color: #ffffff;
+    margin-top: 2em;
+    background-color: #ffffff;
 }
 
 .white-bg {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .blue-bg {
-  background-color: #2196F3;
+    background-color: #2196F3;
 }
+
 
 /* row-container: each row inside container2-subcontent. */
+
 .row-container {
-  margin-bottom: -20px; /* This cancels the margin bottom property in Materialize's "row" class. */
-  margin-top: -20px; 
-} 
+    margin-bottom: -20px;
+    /* This cancels the margin bottom property in Materialize's "row" class. */
+    margin-top: -20px;
+}
+
 
 /* Row1Column1 */
+
 .row {
-  padding-top: 1em;
+    padding-top: 1em;
 }
 
+
 /* Row1Column1 */
+
 .row1-column1 {
-  max-width: 458px;
+    max-width: 458px;
 }
+
 
 /* Image in the first row */
-.row1-column2-img {
-  display: block;
-  max-width: 80%;
-  margin: auto;
-  
-  vertical-align: middle;
 
+.row1-column2-img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    vertical-align: middle;
 }
+
 
 /* Image in the first row (Above 600px) */
+
 @media only screen and (min-width: 600px) {
-  .row1-column2-img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-  }
+    .row1-column2-img {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
 }
+
 
 /* Row Limiter, limits the width*/
+
 .row-width-limiter {
-  max-width: 1350px;
-  margin: auto;
+    max-width: 1350px;
+    margin: auto;
 }
 
+
 /* Row Limiter2, limits the width*/
+
 .row-width-limiter2 {
-  max-width: 1600px;
-  margin: auto;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
 
 footer {
-  margin-top: 0; 
+    margin-top: 0;
 }
 
 .btn-large {
-  box-shadow: none !important;
-  border-radius: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 
 .card {
-  position: relative;
-  margin: 2em;
-
-  box-shadow: none !important;
+    position: relative;
+    margin: 2em;
+    box-shadow: none !important;
 }
 
+
 /* Hover over card to expand */
+
 .card:hover {
-  transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .card-margin {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 /* Google Form (handles orders) */
+
 .buy-form {
-  width: 100%;
-  height: 80em;
-
-  margin-top: 2em;
-
-  overflow-x: hidden;
-  overflow-y: hidden;
+    width: 100%;
+    height: 80em;
+    margin-top: 2em;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 
 /* IMAGE 30% width */
-.img-30pc-wd {
-  display: block;
-  position: relative;
 
-  max-width: 30%;
-  margin: auto;
+.img-30pc-wd {
+    display: block;
+    position: relative;
+    max-width: 30%;
+    margin: auto;
 }
+
 
 /* IMAGE 100% width */
-.img-100pc-wd {
-  display: block;
-  position: relative;
 
-  max-width: 100%;
-  margin: auto;
+.img-100pc-wd {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
 }
+
 
 /* IMAGE 100% width contained */
-.img-100pc-wd {
-  display: block;
-  position: relative;
 
-  max-width: 50%;
-  object-fit: contain;
-  margin: auto;
+.img-100pc-wd {
+    display: block;
+    position: relative;
+    max-width: 50%;
+    object-fit: contain;
+    margin: auto;
 }
+
 
 /* Small Image In Portfolio */
+
 .portfolio-img {
-  position: relative;
-
-  max-width: 99%;
-  margin: auto;
-  
-  margin-top: 2em;
-  margin-bottom: 2em;
-
-  align-content: center;
+    position: relative;
+    max-width: 99%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-content: center;
 }
+
 
 /* Big Image In Portfolio */
+
 .portfolio-img2 {
-  position: relative;
-
-  max-width: 99%;
-
-  margin: auto;  
-  margin-top: 2em;
-  margin-bottom: 2em;
-
-  align-content: center;
-
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 99%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-content: center;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 
 /* CUSTOM COLORS */
+
 .dark-purple {
-  background-color: #180C2E;
+    background-color: #180C2E;
 }
 
 .dark-purple-1 {
-  background-color: #512692;
+    background-color: #512692;
 }
 
 .yellow-gradient {
-  background: linear-gradient(182deg, #fff59d 0%, #fff59d 87%, #ffffff 90%);
+    background: linear-gradient(182deg, #fff59d 0%, #fff59d 87%, #ffffff 90%);
 }
 
 .orange-gradient {
-  background: linear-gradient(-1deg, #FFCC80 0%, #FFCC80 87%, #ffffff 90%);
+    background: linear-gradient(-1deg, #FFCC80 0%, #FFCC80 87%, #ffffff 90%);
 }
-
 
 
 /* CUSTOM FONTS */
+
 .text-date {
-  font-size: 0.8em;
-  color: purple;
+    font-size: 0.8em;
+    color: purple;
 }
 
 .highlight-blue {
-  color: #3366cc;
-  font-weight: 400;
+    color: #3366cc;
+    font-weight: 400;
 }
 
 .text-heavy {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .h5-text-large-1 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .p-text-large-1 {
-  font-size: 1.5em;
-  min-width: 100%;
+    font-size: 1.5em;
+    min-width: 100%;
 }
 
 h4 {
-  font-family: 'Nunito';
+    font-family: 'Nunito';
 }
 
+
 /* H5 rowcontainer explanation text */
+
 .h5-row {
-  font-family: 'Nunito';
-  font-weight: 300;
+    font-family: 'Nunito';
+    font-weight: 300;
 }
 
 h5 {
-  font-family: 'Nunito';
+    font-family: 'Nunito';
 }
+
 
 /* Get started & portfolio button */
-#download-button {
-  margin-top: 0.5em;
-}
 
+#download-button {
+    margin-top: 0.5em;
+}
 
 
 /* CUSTOM PADDINGS */
+
+.padding-t-1em {
+    padding-top: 1em;
+}
+
 .padding-tb-3em {
-  padding-top: 3em;
-  padding-bottom: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .padding-tb-13em {
-  padding-top: 13em;
-  padding-bottom: 13em;
+    padding-top: 13em;
+    padding-bottom: 13em;
 }
+
 
 /* CUSTOM MARGINS */
+
 .margin-b-2em {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
+.margin-t-2em {
+    margin-top: 2em;
+}
+
+
 /* CUSTOM Max Widths */
+
 .max-width-1em {
-  max-width: 1em;
+    max-width: 1em;
 }
 
 .max-width-2em {
-  max-width: 2em;
+    max-width: 2em;
 }
 
 .max-width-3em {
-  max-width: 3em;
+    max-width: 3em;
 }
 
 .max-width-4em {
-  max-width: 4em;
+    max-width: 4em;
 }
 
 .max-width-5em {
-  max-width: 5em;
+    max-width: 5em;
 }
 
 .max-width-6em {
-  max-width: 6em;
+    max-width: 6em;
 }
 
 .max-width-7em {
-  max-width: 4em;
+    max-width: 4em;
 }
 
 .max-width-8em {
-  max-width: 8em;
+    max-width: 8em;
 }
 
 .max-width-9em {
-  max-width: 9em;
+    max-width: 9em;
 }
 
 .max-width-10em {
-  max-width: 10em;
+    max-width: 10em;
 }
 
 .max-width-11em {
-  max-width: 11em;
+    max-width: 11em;
 }
 
 .max-width-12em {
-  max-width: 12em;
+    max-width: 12em;
 }
 
 .max-width-13em {
-  max-width: 13em;
+    max-width: 13em;
 }
 
 .max-width-14em {
-  max-width: 14em;
+    max-width: 14em;
 }
 
 .max-width-15em {
-  max-width: 15em;
+    max-width: 15em;
 }
 
 .max-width-16em {
-  max-width: 16em;
+    max-width: 16em;
 }
 
 .max-width-17em {
-  max-width: 17em;
+    max-width: 17em;
 }
 
 .max-width-18em {
-  max-width: 18em;
+    max-width: 18em;
 }
 
 .max-width-19em {
-  max-width: 19em;
+    max-width: 19em;
 }
 
 .max-width-20em {
-  max-width: 20em;
+    max-width: 20em;
 }
 
 .max-width-100pc {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .max-width-50pc {
-  max-width: 50%;
+    max-width: 50%;
 }
 
 
 /* CUSTOM CARD COLORS */
+
 .card-purple {
-  background-color: #7e57c2 !important;
+    background-color: #7e57c2 !important;
 }
 
 .card-dark-purple {
-  background-color: #4d2c91 !important;
+    background-color: #4d2c91 !important;
 }
 
 .card-yellow {
-  background-color: #fdd835 !important;
+    background-color: #fdd835 !important;
 }
 
 .card-teal {
-  background-color: #00766c !important;
+    background-color: #00766c !important;
 }
 
 .card-dark-teal {
-  background-color: #00675b !important;
+    background-color: #00675b !important;
 }
 
 .card-orange {
-  background-color: #ffbd5b !important;
+    background-color: #ffbd5b !important;
 }
 
 .card-dark-orange {
-  background-color: #bb4d00 !important;
+    background-color: #bb4d00 !important;
 }
 
 .card-indigo {
-  background-color: #5c6bc0 !important;
+    background-color: #5c6bc0 !important;
 }
 
 .card-dark-indigo {
-  background-color: #26418f !important;
+    background-color: #26418f !important;
 }
 
 .card-purple2 {
-  background-color: #ab47bc !important;
+    background-color: #ab47bc !important;
 }
 
 .card-dark-purple2 {
-  background-color: #790e8b !important;
+    background-color: #790e8b !important;
 }
 
 .card-grey-bcs {
-  background-color: #EAEAEA !important;
+    background-color: #EAEAEA !important;
 }
 
 .card-grey-bcs-light {
-  background-color: #f8f8f8 !important;
+    background-color: #f8f8f8 !important;
 }
 
-/* Section Gradient Backgrounds */ 
+
+/* Section Gradient Backgrounds */
+
 .section-whiteToTealToWhite {
-  background: rgb(255,255,255);
-  background: linear-gradient(2deg, #ffffff 0%, #ffffff 13%, #009688 16%, #009688 85%, #ffffff 87%, #ffffff 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(2deg, #ffffff 0%, #ffffff 13%, #009688 16%, #009688 85%, #ffffff 87%, #ffffff 100%);
 }
 
 .section-whiteToOrangeTowhite {
-  background: rgb(255,255,255);
-  background: linear-gradient(-2deg, #ffffff 0%, #ffffff 13%, #ffbd5b 16%, #ffbd5b 85%, #ffffff 87%, #ffffff 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-2deg, #ffffff 0%, #ffffff 13%, #ffbd5b 16%, #ffbd5b 85%, #ffffff 87%, #ffffff 100%);
 }
 
 .text-yellow {
-  color: #fdd835 !important;
+    color: #fdd835 !important;
 }
 
+
 /* COLORS */
+
 .background-grey {
-  background-color: #F2F2F2 !important;
+    background-color: #F2F2F2 !important;
 }
 
 .background-white {
- background-color: #ffffff !important;
+    background-color: #ffffff !important;
 }
+
 
 /* IMG ALIGNMENT */
+
 .center-img {
-  display: block;
-  
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /* BLOCK ALIGNMENT */
+
 .center-block {
-  display: block;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
 
 /* IMG ALIGNMENT with shadow */
-.center-img-shadow {
-  display: block;
-  
-  margin-left: auto;
-  margin-right: auto;
 
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+.center-img-shadow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 /* Round Shadow */
-.shadow-round {
-  background-color: white;
 
-  border-radius: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+.shadow-round {
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+
 /* Text Shadow */
+
 .text-shadow {
-  text-shadow: 1px 1px 5px #000000;
+    text-shadow: 1px 1px 5px #000000;
 }

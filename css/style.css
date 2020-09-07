@@ -77,11 +77,37 @@ nav {
     font-weight: 800;
 }
 
+.banner-subheader-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+}
+
 
 /* Banner header Title Text BG*/
 
 .banner-header-text-bg-cyan {
     background-color: #0BE6AF;
+    padding-left: 1%;
+    padding-right: 1%;
+    ;
+}
+
+
+/* Banner header Title Text BG*/
+
+.banner-header-text-bg-darkcyan {
+    background-color: #019671;
+    padding-left: 1%;
+    padding-right: 1%;
+    ;
+}
+
+
+/* Banner header Title Text BG*/
+
+.banner-header-text-bg-white {
+    background-color: #ffffff;
     padding-left: 1%;
     padding-right: 1%;
     ;
@@ -110,6 +136,15 @@ nav {
 
 .banner-header-text-bg-orange {
     background-color: #FF9800;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+
+/* Banner header Title Text BG*/
+
+.banner-header-text-bg-yellow {
+    background-color: #FFEB3B;
     padding-left: 0.8em;
     padding-right: 0.8em;
 }
@@ -146,6 +181,24 @@ nav {
 
 .banner-header-text-bg-green {
     background-color: #17721a;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+
+/* Banner header Title Text BG*/
+
+.banner-header-text-bg-pink {
+    background-color: #E91E63;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+
+/* Banner header Title Text BG*/
+
+.banner-header-text-bg-darkpink {
+    background-color: #8d002f;
     padding-left: 0.8em;
     padding-right: 0.8em;
 }
@@ -487,7 +540,19 @@ h5 {
 /* CUSTOM PADDINGS */
 
 .padding-t-1em {
-    padding-top: 1em;
+    padding-top: 1em !important;
+}
+
+.padding-t-2em {
+    padding-top: 2em !important;
+}
+
+.padding-t-3p5em {
+    padding-top: 3.5em !important;
+}
+
+.padding-t-4em {
+    padding-top: 4em !important;
 }
 
 .padding-tb-3em {
@@ -507,8 +572,20 @@ h5 {
     margin-bottom: 2em;
 }
 
+.margin-t-1em {
+    margin-top: 1em;
+}
+
 .margin-t-2em {
     margin-top: 2em;
+}
+
+.margin-t-3p5em {
+    margin-top: 3.5em;
+}
+
+.margin-t-4em {
+    margin-top: 4em;
 }
 
 
@@ -623,6 +700,10 @@ h5 {
 
 .card-dark-teal {
     background-color: #00675b !important;
+}
+
+.button-teal {
+    background-color: #0BE6AF !important;
 }
 
 .card-orange {

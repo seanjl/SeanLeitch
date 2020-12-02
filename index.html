@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="dark-grey lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">sean leitch</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo font-nunito center">sean leitch</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -25,92 +27,135 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
+
+    <div class="section no-pad-bot banner" id="index-banner">
         <div class="container">
-            <br><br>
-            <h1 class="header center black-text font-sf-semibold">sean leitch</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-            </div>
-            <br><br>
+
 
         </div>
     </div>
 
 
-    <div class="container">
-        <div class="section">
+    <main>
+        <!-- Introduction -->
+        <div class="container">
+            <div class="section">
 
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+                <!--   Icon Section   -->
+                <div class="row mt-2">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h5 class="center">Who am I?</h5>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                            <p class="light center">I'm a 20 year old content creator and student at the European University of Madrid</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h5 class="center">What do I do?</h5>
+
+                            <p class="light center">I run a web development agency, <a href="http://seanjl.github.io/Senify">Senify</a><br>I edit music videos and create other media content.</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h5 class="center">What do I know?</h5>
+
+                            <p class="light center">I speak fluent English & Spanish. I also know HTML, CSS, Java, Adobe Premiere, Adobe Photoshop and more</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
-
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across
-                            all platforms allow for a more unified user experience.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                    </div>
-                </div>
             </div>
-
+            <br><br>
         </div>
-        <br><br>
-    </div>
+
+        <!-- Portfolio -->
+        <div class="container">
+            <div class="section">
+
+                <!--   Icon Section   -->
+                <div class="row">
+                    <h2 class="center">Portfolio</h2>
+                    <!-- Senify -->
+                    <div class="col s12 m4 center">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/portfolio/senify.png">
+                                <span class="card-title">Senify</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Senify is my web design & development agency. Do you need an affordable, good-looking website for your business? Head over to Senify!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://seanjl.github.io/Senify" class="blue-text">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Betterly -->
+                    <div class="col s12 m4 center">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/portfolio/betterly.png">
+                                <span class="card-title">Betterly</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Betterly is a website/app which helps people improve their lives by providing info about personal development, motivation, discipline, dopamine detox, etc..</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://seanjl.github.io/Betterly" class="blue-text">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collapsr -->
+                    <div class="col s12 m4 center">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/portfolio/collapsr.png">
+                                <span class="card-title">Collapsr</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Collapsr is a website/app which provides info on 'Collapse': The progressive decline of modern civilization.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://seanjl.github.io/Collapsr" class="blue-text">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+        </div>
+    </main>
 
     <footer class="page-footer grey lighten-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="black-text">Company Bio</h5>
-                    <p class="black-text">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+                    <h5 class="black-text">sean leitch</h5>
+                    <p class="black-text text-lighten-4">.</p>
+                    <p class="black-text text-lighten-4">I create websites, music videos, apps and other media content.</p>
                 </div>
+
                 <div class="col l3 s12">
-                    <h5 class="black-text">Settings</h5>
+                    <h5 class="black-text">contact</h5>
                     <ul>
-                        <li><a class="black-text" href="#!">Link 1</a></li>
-                        <li><a class="black-text" href="#!">Link 2</a></li>
-                        <li><a class="black-text" href="#!">Link 3</a></li>
-                        <li><a class="black-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="black-text">Connect</h5>
-                    <ul>
-                        <li><a class="black-text" href="#!">Link 1</a></li>
-                        <li><a class="black-text" href="#!">Link 2</a></li>
-                        <li><a class="black-text" href="#!">Link 3</a></li>
-                        <li><a class="black-text" href="#!">Link 4</a></li>
+                        <li><a class="blue-text" href="mailto:sean.leitch@outlook.com?Subject=Contact%20Sean" target="_top">Email</a></li>
+                        <li><a class="blue-text" href="https://www.instagram.com/seanjleitch/">Instagram</a></li>
+                        <li><a class="blue-text" href="https://github.com/seanjl/">GitHub</a></li>
+                        <li><a class="blue-text" href="https://www.linkedin.com/in/seanjleitch/">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="black-text text-lighten-3" href="http://github.com/seanjl">Sean Leitch</a>
+            <div class="container black-text">
+                Made by <a class="blue-text darken-4" href="http://github.com/seanjl"><b>seanjl</b></a>
             </div>
         </div>
     </footer>
@@ -120,6 +165,76 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+
+    <!-- Scripts: AOS Animations-->
+    <script src="aos/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 700,
+        });
+    </script>
+
+    <!-- Scripts: H1 Animation-->
+    <script type="text/javascript">
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 230 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #6A1B9A }";
+            document.body.appendChild(css);
+        };
+    </script>
 
 </body>
 

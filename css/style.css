@@ -2,8 +2,21 @@ html {
     font-family: SF-display !important;
 }
 
+nav {
+    position: fixed !important;
+    z-index: 999;
+}
+
+.banner {
+    background-image: url("../assets/banner.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+}
+
 .dark-grey {
-    background-color: #333333;
+    background-color: #333333ee;
 }
 
 .icon-block {
@@ -16,6 +29,23 @@ html {
 
 .font-sf-semibold {
     font-family: SF-Semibold !important;
+}
+
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
 }
 
 

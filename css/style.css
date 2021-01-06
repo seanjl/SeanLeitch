@@ -43,8 +43,23 @@ nav {
     padding-top: 0.10em;
 }
 
+.h2-hl-rafblue {
+    color: white;
+    background-color: #012856;
+    width: wrap-content;
+    display: inline-block;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+}
+
 .card-skills {
     padding: 0 0 0.5em 1em;
+}
+
+.card-contact {
+    padding: 0 1em 0.5em 1em;
 }
 
 .card-skills-title {

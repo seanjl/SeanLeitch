@@ -32,6 +32,16 @@ nav {
     font-weight: 600;
 }
 
+.banner-sidetitle {
+    color: white;
+    width: wrap-content;
+    display: inline-block;
+    padding-left: 0.6em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+}
+
 .h2-hl-scarlet {
     color: white;
     background-color: #cd1231d5;
@@ -151,6 +161,10 @@ nav {
     margin-top: 3em;
 }
 
+.mt-4 {
+    margin-top: 4em;
+}
+
 .mb-1 {
     margin-bottom: 1em;
 }
@@ -161,6 +175,10 @@ nav {
 
 .mb-3 {
     margin-bottom: 3em;
+}
+
+.mb-4 {
+    margin-bottom: 4em;
 }
 
 

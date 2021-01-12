@@ -107,6 +107,25 @@ nav {
 }
 
 
+/* Text Colour */
+
+.txt-raf-blue {
+    color: #012856 !important;
+}
+
+.txt-raf-blue-a1 {
+    color: #012956ce !important;
+}
+
+.txt-raf-scarlet {
+    color: #CD1231 !important;
+}
+
+.txt-raf-grey {
+    color: #E9E9E9 !important;
+}
+
+
 /* Icons */
 
 .icon-block {

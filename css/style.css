@@ -20,6 +20,15 @@ nav {
     height: 50vh;
 }
 
+.banner-petronum {
+    background-image: url("../assets/petronum-banner.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 50vh;
+}
+
 .banner-title {
     color: white;
     background-color: #cd1231d5;
@@ -120,6 +129,10 @@ nav {
     background-color: white !important;
 }
 
+.bg-brown {
+    background-color: #46241c !important;
+}
+
 
 /* Text Colour */
 
@@ -183,6 +196,46 @@ nav {
 
 .mb-4 {
     margin-bottom: 4em;
+}
+
+.padding-card {
+    padding: 0.5em 0.3em 1em 0.3em;
+}
+
+.pdt-05 {
+    padding-top: 0.5em;
+}
+
+.pdt-1 {
+    padding-top: 1em;
+}
+
+.pdt-2 {
+    padding-top: 2em;
+}
+
+.pdt-3 {
+    padding-top: 3em;
+}
+
+.pdt-4 {
+    padding-top: 4em;
+}
+
+.pdb-1 {
+    padding-bottom: 1em;
+}
+
+.pdb-2 {
+    padding-bottom: 2em;
+}
+
+.pdb-3 {
+    padding-bottom: 3em;
+}
+
+.pdb-4 {
+    padding-bottom: 4em;
 }
 
 

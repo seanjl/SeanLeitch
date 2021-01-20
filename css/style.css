@@ -250,6 +250,10 @@ nav {
     font-weight: 500;
 }
 
+.max-width-100 {
+    max-width: 100%;
+}
+
 
 /* Custom fonts */
 

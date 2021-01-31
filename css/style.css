@@ -92,23 +92,51 @@ nav {
 
 .card-neumorph {
     margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     height: auto;
     width: 90%;
     padding: 1.5em;
     border-radius: 50px;
     background: #f1f3f6;
-    box-shadow: 
-    inset 0 0 15px rgba(55, 84, 170,0),
-    inset 0 0 20px rgba(255, 255, 255,0),
-    7px 7px 15px rgba(55, 84, 170,.15),
-    -7px -7px 20px rgba(255, 255, 255,1),
-    inset 0px 0px 4px rgba(255, 255, 255,.2);
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, .2);
 }
 
 .card-image-neumorph {
     width: 100% !important;
     border-radius: 1em;
-    box-shadow: 0px 10px 15px rgba(55, 84, 170,.25);
+    box-shadow: 0px 10px 15px rgba(55, 84, 170, .25);
+}
+
+.card-neumorph-rafblue {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 90%;
+    padding: 1.5em;
+    border-radius: 50px;
+    background: #012856;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(9, 19, 110, 0.61), inset 0px 0px 4px rgba(40, 37, 214, 0.2);
+}
+
+.card-neumorph-rafblue:hover {
+    background: #012f64;
+    border: .0625rem solid #41801c00;
+    box-shadow: inset 2px 2px 5px #0f1747, inset -3px -3px 7px #001aff40;
+}
+
+.card-blog-scarlet {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 90%;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+    border-radius: 50px;
+    color: black;
+    background: #f1f3f6;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(255, 144, 144), inset 0px 0px 4px rgba(255, 255, 255, .2);
 }
 
 .button {
@@ -139,16 +167,136 @@ nav {
     box-shadow: inset 2px 2px 5px #0f1747, inset -3px -3px 7px #001aff40;
 }
 
-.button:active {
+button:active {
     outline: none !important;
 }
 
-.button:focus {
+button:focus {
     outline: none !important;
+}
+
+.buttonbig {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.8em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #0173CF !important;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+    outline: none !important;
+    border: .0625rem solid #0064b6;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 10px 10px 15px #3748aa40, -10px -8px 15px #bfbaff40;
+    transition: 0.3s !important;
+}
+
+.buttonbig:hover {
+    background: #006ac0;
+    border: .0625rem solid #41801c00;
+    box-shadow: inset 2px 2px 5px #0f1747, inset -3px -3px 7px #001aff40;
 }
 
 .curved-bottom {
     border-radius: 0% 0% 150% 150%/0% 0% 40% 40%;
+}
+
+
+/* BLOG */
+
+.blog-banner-title {
+    color: white;
+    background-color: #012956cc;
+    width: wrap-content;
+    display: inline-block;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+    font-weight: 600;
+}
+
+.blog-banner-title-art {
+    color: white;
+    width: wrap-content;
+    display: inline-block;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+    font-weight: 600;
+}
+
+.blog-banner-date-art {
+    color: white;
+    width: wrap-content;
+    background-color: #012956cc;
+    display: inline-block;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+    font-size: 2em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.blog-art-p {
+    color: #000000;
+    width: 90%;
+    display: inline-block;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.15em;
+    padding-top: 0.10em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-blog-title {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.card-blog-date {
+    font-size: 1em;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.button-blog {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.8em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #CD1231 !important;
+    width: auto;
+    height: 33px;
+    text-decoration: none;
+    color: #fff;
+    outline: none !important;
+    border: .0625rem solid #b60000;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 10px 10px 15px #aa373740, -10px -8px 15px #ffbaba40;
+    transition: 0.3s !important;
+}
+
+.button-blog:hover {
+    background: #920c22;
+    border: .0625rem solid #41801c00;
+    box-shadow: inset 2px 2px 5px #470f0f, inset -3px -3px 7px #ff000040;
 }
 
 

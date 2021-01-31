@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -42,7 +45,7 @@
 
     <div class="section no-pad-bot banner curved-bottom" id="index-banner">
         <div class="container">
-            <h1 class="mt-2 banner-title">web dev</h1>
+            <h1 class="mt-2 banner-title" data-aos="fade-left">web dev</h1>
 
         </div>
     </div>
@@ -56,14 +59,14 @@
                 <!--   Icon Section   -->
                 <div class="row mt-2">
                     <div class="col s12 m6">
-                        <div class="icon-block">
+                        <div class="icon-block" data-aos="flip-left">
                             <h2 class="center">Who am I?</h2>
 
                             <p class="flow-text center">I'm a software developer and student at the European University of Madrid</p>
                         </div>
                     </div>
 
-                    <div class="col s12 m6 mt-2">
+                    <div class="col s12 m6 mt-2" data-aos="flip-right">
                         <div class="icon-block">
                             <p class="flow-text center">I run <a href="http://seanjl.github.io/Senify">Senify</a>, a web development agency.<br>I also edit music videos and create other media content.</p>
                         </div>
@@ -76,14 +79,14 @@
 
         <!-- Portfolio -->
         <div class="raf-neum" id="portfolio">
-            <div class="container section">
+            <div class="container section" data-aos="zoom-out">
 
                 <!--   Icon Section   -->
                 <div class="row">
                     <h2 class="center black-text">Stuff I'm Working On</h2>
                     <!-- Senify -->
                     <div class="col s12 m4 center">
-                        <div class="card-neumorph">
+                        <div class="card-neumorph" data-aos="zoom-in">
                             <div class="">
                                 <img src="assets/portfolio/senify.png" class="card-image-neumorph">
                             </div>
@@ -104,97 +107,105 @@
 
                     <!-- Petronum -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/portfolio/petronum.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/petronum.png" class="card-image-neumorph">
                             </div>
-
                             <div class="card-content black-text">
                                 <p>Petronum is an android app which allows you to make fuel-related calculations for your car.<br><br> You can find out the cost of a journey, how much fuel will be used, how far you can drive with the ammount of petrol you
                                     have.
+                                </p>
                             </div>
 
-                            <div class="card-action raf-nblue">
-                                <a href="apps/petronum.html" class="white-text">Learn More ></a>
-                            </div>
+                            <a href="apps/petronum.html" class="white-text center">
+                                <button class="button">
+                                    Go to website >
+                                </button>
+                            </a>
+
+
                         </div>
                     </div>
 
                     <!-- Betterly -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/portfolio/betterly.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/betterly.png" class="card-image-neumorph">
                             </div>
                             <div class="card-content black-text">
                                 <p>Betterly is a news-aggregator which helps people improve their lives and become happier.<br><br> It does this by showing articles related personal development, motivation, uplifting news, discipline, dopamine detox, etc...</p>
                             </div>
-                            <div class="card-action raf-nblue">
-                                <a href="http://seanjl.github.io/Betterly" class="white-text">Go to website ></a>
-                            </div>
+
+                            <a href="http://seanjl.github.io/Betterly" class="white-text center">
+                                <button class="button">
+                                    Go to website >
+                                </button>
+                            </a>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="row">
-                    <!-- PORTFOLIO -->
-                    <a href="work.html" class="white-text">
-                        <div class="col s12 m4 center offset-m4 mb-1">
-                            <div class="card padding-card raf-blue">
-                                <h4>Check out<br> my portfolio ></h4>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="col s12 m4 center offset-m4 mb-1">
+                        <!-- PORTFOLIO -->
+                        <a href="work.html" class="white-text">
+                            <button class="buttonbig">
+                                    <p>Check out<br> my portfolio ></p>
+                            </button>
+
+                        </a>
+                    </div>
                 </div>
             </div>
-            <br><br>
         </div>
 
         <!-- Blog -->
         <div class="raf-scarlet" id="blog">
-            <div class="container section">
+            <div class="container section" data-aos="fade-down">
+                <h2 class="white-text">Blog</h2>
+
                 <!--   Icon Section   -->
                 <div class="row">
-                    <h2 class="white-text">Blog</h2>
 
-                    <!-- Senify -->
+                    <!-- Post1: Welcome to my Blog -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <span class="card-title"></span>
-                            </div>
-                            <div class="card-content black-text">
-                                <p>This is my first post!</p>
-                            </div>
+                        <div class="card-blog-scarlet">
+                            <p class="card-blog-title black-text">Welcome to my blog!</p>
+                            <p class="card-blog-date">31 Jan 2021</p>
+                            <p>This is the first post on my brand new blog!</p>
+
+                            <a href="blog/2021/1/31-welcometomyblog.html" class="white-text">
+                                <button class="button-blog">Read more ></button>
+                            </a>
                         </div>
                     </div>
-                </div>
 
+                    <!-- PORTFOLIO -->
+                    <div class="col s12 m4 center">
+                        <a href="blog.html" class="white-text">
+                            <button class="button-blog">Check out my blog ></button>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <br><br>
         </div>
 
         <!-- Skills -->
         <div class="raf-grey" id="skills">
-            <div class="section container">
+            <div class="section container" data-aos="zoom-in">
                 <h2 class="txt-raf-blue">Skills</h2>
 
                 <!-- Row1 -->
                 <div class="row mt-2">
                     <!-- Web Development -->
                     <div class="col s12 m4">
-                        <div class="card">
-                            <div class="raf-nblue">
-                                <h5 class="card-skills-title">Coding</h5>
-                            </div>
+                        <div class="card-neumorph" data-aos="fade-left">
+                            <h5 class="card-skills-title black-text">Coding</h5>
                             <div class="card-skills white-text">
                                 <p class="black-text">- Web Development (HTML, CSS, JS, Bootstrap)</p>
-                                <p class="black-text">- Android App Development (Java)</p>
-                                <p class="black-text">- Java, Spring, Maven</p>
+                                <p class="black-text">- Android App Development (Java), FireBase</p>
+                                <p class="black-text">- Java, Spring, Maven, Hibernate</p>
                                 <p class="black-text">- Python</p>
                                 <p class="black-text">- Git</p>
                             </div>
@@ -203,11 +214,9 @@
 
                     <!-- Media -->
                     <div class="col s12 m4">
-                        <div class="card">
-                            <div class="raf-nblue">
-                                <h5 class="card-skills-title">Media</h5>
-                            </div>
-                            <div class="card-skills white-text">
+                        <div class="card-neumorph" data-aos="fade-up">
+                            <h5 class="card-skills-title black-text">Media</h5>
+                            <div class="card-skills">
                                 <p class="black-text">- Image Editing and Video Editing</p>
                                 <p class="black-text">- Adobe Photoshop</p>
                                 <p class="black-text">- Adobe Premiere</p>
@@ -217,10 +226,8 @@
 
                     <!-- Media -->
                     <div class="col s12 m4">
-                        <div class="card">
-                            <div class="raf-nblue">
-                                <h5 class="card-skills-title">Languages</h5>
-                            </div>
+                        <div class="card-neumorph" data-aos="fade-right">
+                            <h5 class="card-skills-title black-text">Languages</h5>
                             <div class="card-skills white-text">
                                 <p class="black-text center">I speak fluent English and Spanish</p>
                             </div>
@@ -240,56 +247,47 @@
                 <!-- Row1 -->
                 <div class="row mt-2">
                     <!-- Email -->
-                    <div class="col s12 m3">
-                        <div class="card">
-                            <div class="raf-nblue">
+                    <a href="mailto:sean.leitch@outlook.com">
+                        <div class="col s12 m3">
+                            <div class="card-neumorph-rafblue">
                                 <h5 class="card-skills-title">Email</h5>
-                            </div>
-                            <div class="card-contact white-text">
-                                <p class="black-text center">sean.leitch@live.com</p>
+                                <p class="white-text center">sean.leitch@outlook.com</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Instagram -->
-                    <div class="col s12 m3">
-                        <div class="card">
-                            <div class="raf-nblue">
+                    <a href="">
+                        <div class="col s12 m3">
+                            <div class="card-neumorph-rafblue">
                                 <h5 class="card-skills-title">Instagram</h5>
-                            </div>
-                            <div class="card-contact white-text">
-                                <p class="black-text center">@seanjleitch</p>
+                                <p class="white-text center">@seanjleitch</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- LinkedIn -->
-                    <div class="col s12 m3">
-                        <div class="card">
-                            <div class="raf-nblue">
+                    <a href="">
+                        <div class="col s12 m3">
+                            <div class="card-neumorph-rafblue">
                                 <h5 class="card-skills-title">LinkedIn</h5>
-                            </div>
-                            <div class="card-contact white-text">
-                                <p class="black-text center">seanjleitch</p>
+                                <p class="white-text center">seanjleitch</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- GitHub -->
-                    <div class="col s12 m3">
-                        <div class="card">
-                            <div class="raf-nblue">
+                    <a href="">
+                        <div class="col s12 m3">
+                            <div class="card-neumorph-rafblue">
                                 <h5 class="card-skills-title">GitHub</h5>
-                            </div>
-                            <div class="card-contact white-text">
-                                <p class="black-text center">seanjl</p>
+                                <p class="white-text center">seanjl</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
             </div>
-            <br><br>
+            <br>
         </div>
     </main>
 
@@ -333,67 +331,8 @@
         });
     </script>
 
-    <!-- Scripts: H1 Animation-->
-    <script type="text/javascript">
-        var TxtRotate = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        TxtRotate.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 230 - Math.random() * 100;
-
-            if (this.isDeleting) {
-                delta /= 2;
-            }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function() {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #6A1B9A }";
-            document.body.appendChild(css);
-        };
-    </script>
 
 </body>
 

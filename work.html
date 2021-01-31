@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -24,7 +27,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
                 <li><a href="index.html#skills">Skills</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -32,7 +35,7 @@
             <ul id="nav-mobile" class="sidenav raf-blue">
                 <li><a href="index.html" class=" white-text">Home</a></li>
                 <li><a href="#portfolio" class=" white-text">Portfolio</a></li>
-                <li><a href="#blog" class=" white-text">Blog</a></li>
+                <li><a href="blog.html#blog" class=" white-text">Blog</a></li>
                 <li><a href="#skills" class=" white-text">Skills</a></li>
                 <li><a href="#contact" class=" white-text">Contact</a></li>
             </ul>
@@ -49,61 +52,70 @@
     <main>
 
         <!-- Portfolio -->
-        <div class="white" id="portfolio">
-            <div class="container section">
+        <div class="raf-neum" id="portfolio">
+            <div class="container section" data-aos="zoom-out">
 
                 <!--   Icon Section   -->
                 <div class="row">
                     <h2 class="center black-text">Stuff I'm Working On</h2>
                     <!-- Senify -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/portfolio/senify.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/senify.png" class="card-image-neumorph">
                             </div>
                             <div class="card-content black-text">
                                 <p>Senify is my web design & development agency. Do you need an affordable, good-looking website for your business? Head over to Senify!</p>
                                 <p><br>You can find my website portfolio <a href="http://seanjl.github.io/Senify#portfolio">here</a></p>
                             </div>
-                            <div class="card-action raf-nblue">
-                                <a href="http://seanjl.github.io/Senify" class="white-text center">Go to website ></a>
-                            </div>
+
+                            <a href="http://seanjl.github.io/Senify" class="white-text center">
+                                <button class="button">
+                                        Go to website >
+                                </button>
+                            </a>
+
+
                         </div>
                     </div>
 
                     <!-- Petronum -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/portfolio/petronum.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/petronum.png" class="card-image-neumorph">
                             </div>
-
                             <div class="card-content black-text">
                                 <p>Petronum is an android app which allows you to make fuel-related calculations for your car.<br><br> You can find out the cost of a journey, how much fuel will be used, how far you can drive with the ammount of petrol you
                                     have.
+                                </p>
                             </div>
 
-                            <div class="card-action raf-nblue">
-                                <a href="apps/petronum.html" class="white-text">Learn More ></a>
-                            </div>
+                            <a href="apps/petronum.html" class="white-text center">
+                                <button class="button">
+                                    Go to website >
+                                </button>
+                            </a>
+
+
                         </div>
                     </div>
 
                     <!-- Betterly -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/portfolio/betterly.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/betterly.png" class="card-image-neumorph">
                             </div>
                             <div class="card-content black-text">
                                 <p>Betterly is a news-aggregator which helps people improve their lives and become happier.<br><br> It does this by showing articles related personal development, motivation, uplifting news, discipline, dopamine detox, etc...</p>
                             </div>
-                            <div class="card-action raf-nblue">
-                                <a href="http://seanjl.github.io/Betterly" class="white-text">Go to website ></a>
-                            </div>
+
+                            <a href="http://seanjl.github.io/Betterly" class="white-text center">
+                                <button class="button">
+                                    Go to website >
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -111,33 +123,33 @@
                 <div class="row">
                     <!-- Profitah -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image black-text">
-                                <img src="assets/portfolio/profitah.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/profitah.png" class="card-image-neumorph">
                             </div>
                             <div class="card-content black-text">
                                 <p>Profitah is a simple profit calculator written in JavaScript</p>
                             </div>
-                            <div class="card-action raf-nblue">
-                                <a href="https://seanjl.github.io/Profitah/" class="white-text">Go to website ></a>
-                            </div>
+
+                            <a href="http://seanjl.github.io/Profitah" class="white-text center">
+                                <button class="button">Go to website ></button>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Collapsr -->
                     <div class="col s12 m4 center">
-                        <div class="card">
-                            <div class="card-image black-text">
-                                <img src="assets/portfolio/collapsr.png">
-                                <span class="card-title"></span>
+                        <div class="card-neumorph" data-aos="zoom-in">
+                            <div class="">
+                                <img src="assets/portfolio/collapsr.png" class="card-image-neumorph">
                             </div>
                             <div class="card-content black-text">
                                 <p>Collapsr is a news-aggregator that provides articles related to 'Collapse': Climate change, resource depletion, economic collapse, etc</p>
                             </div>
-                            <div class="card-action raf-nblue">
-                                <a href="http://seanjl.github.io/Collapsr" class="white-text">Go to website ></a>
-                            </div>
+
+                            <a href="http://seanjl.github.io/Collapsr" class="white-text center">
+                                <button class="button">Go to website ></button>
+                            </a>
                         </div>
                     </div>
                 </div>

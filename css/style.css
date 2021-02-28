@@ -109,7 +109,7 @@ p {
 .card-image-neumorph {
     width: 100% !important;
     border-radius: 1em;
-    box-shadow: inset 0px 10px 15px rgba(55, 84, 170, .25);
+    box-shadow: inset 2px 2px 10px #1a1a1a, inset -5px -5px 10px #3f3f3f;
 }
 
 .card-neumorph-rafblue {

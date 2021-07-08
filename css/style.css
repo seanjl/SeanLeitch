@@ -1,14 +1,121 @@
+/* BASIC */
+
 html {
     font-family: 'Maven Pro', sans-serif;
     background: #020024;
-    background: linear-gradient(180deg, #020024 0%, #021e52 9%, #02468f 100%);
+    background: linear-gradient(90deg, #021e52 0%, #05206b 9%, #02468f 100%);
     color: white;
     scroll-behavior: smooth;
+    background-size: 400% 400%;
+    animation: gradient 4s ease-in-out infinite;
 }
 
 nav {
     position: fixed !important;
     z-index: 999;
+    font-family: MetroFont;
+}
+
+.logo-image {
+    max-width: 1.8rem;
+    align-self: center;
+}
+
+@media only screen and (max-width: 320px) {
+    .logo-image {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .logo-image {
+        display: none;
+    }
+}
+
+.brand-logo {
+    font-size: 2.1rem;
+}
+
+@media only screen and (max-width: 393px) {
+    .brand-logo {
+        font-size: 1.4em !important;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .brand-logo {
+        font-size: 1.5em !important;
+    }
+}
+
+
+/* HEADER */
+
+.header-flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.header-flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 3 2 auto;
+    -ms-flex: 3 2 auto;
+    flex: 3 2 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.header-flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: center;
+}
+
+
+/* TEXT HEADERS AND PARAGRAPHS */
+
+@media only screen and (max-width: 463px) {
+    h1 {
+        font-size: 3.5em !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 3em !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.5em !important;
+    }
 }
 
 .h2-hl-scarlet {
@@ -33,9 +140,27 @@ nav {
     padding-top: 0.10em;
 }
 
-p {
-    color: #686988;
+.box-highlight-rafblue {
+    color: white !important;
+    background-color: #012856;
+    width: wrap-content;
+    display: inline-block;
+    padding: 0 0.5em 0 0.5em !important;
+    margin-bottom: 0.5em !important;
 }
+
+p {
+    color: #424357;
+}
+
+.p-appname-gen {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* CARDS */
 
 .card-skills {
     padding: 0 0 0.5em 1em;
@@ -104,6 +229,35 @@ p {
     box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(255, 144, 144), inset 0px 0px 4px rgba(255, 255, 255, .2);
 }
 
+
+/* IMAGES */
+
+.img-applogo {
+    display: block;
+    width: 15%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.img-profilepic {
+    display: block;
+    width: 10%;
+    -webkit-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+    -moz-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+    box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+    animation: floatingImage 4s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 804px) {
+    .img-profilepic {
+        display: none;
+        width: 560%;
+    }
+}
+
+
+/* BUTTONS */
+
 .button {
     margin: auto;
     margin-top: 2em;
@@ -164,7 +318,11 @@ button:active {
 }
 
 
-/* Colours */
+/* BG COLOURS */
+
+.bg-transparent {
+    background-color: #ffffff00 !important;
+}
 
 .dark-grey {
     background-color: #333333ee !important;
@@ -180,6 +338,10 @@ button:active {
 
 .raf-scarlet {
     background-color: #CD1231 !important;
+}
+
+.raf-purple {
+    background-color: #6912cd !important;
 }
 
 .raf-lblue {
@@ -207,10 +369,14 @@ button:active {
 }
 
 
-/* Text Colour */
+/* TEXT COLOURS */
 
 .txt-raf-blue {
     color: #012856 !important;
+}
+
+.txt-white {
+    color: #fff !important;
 }
 
 .txt-raf-blue-a1 {
@@ -226,7 +392,7 @@ button:active {
 }
 
 
-/* Icons */
+/* ICONS */
 
 .icon-block {
     padding: 0 15px;
@@ -237,7 +403,11 @@ button:active {
 }
 
 
-/* Margins */
+/* MARGINS */
+
+.margin-none {
+    margin: 0 0 0 0;
+}
 
 .mt-1 {
     margin-top: 1em;
@@ -271,8 +441,35 @@ button:active {
     margin-bottom: 4em;
 }
 
+.mr-1 {
+    margin-right: 1em;
+}
+
+.mr-2 {
+    margin-right: 2em;
+}
+
+.mr-3 {
+    margin-right: 3em;
+}
+
+.mr-10pc {
+    margin-right: 10%;
+}
+
+.ml-10pc {
+    margin-left: 10%;
+}
+
+
+/* PADDINGS */
+
 .padding-card {
     padding: 0.5em 0.3em 1em 0.3em;
+}
+
+.padding-none {
+    padding: 0 0 0 0;
 }
 
 .pdt-05 {
@@ -312,30 +509,76 @@ button:active {
 }
 
 
-/* Fonts */
-
-.font-sf-semibold {
-    font-family: SF-Semibold !important;
-}
+/* FONTS */
 
 .font-nunito {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
 }
 
+.font-metrofont-bold {
+    font-family: MetroFontBold;
+    font-weight: 500;
+}
+
+.font-metrofont {
+    font-family: MetroFont;
+    font-weight: 500;
+}
+
+
+/* MAX WIDTHS */
+
 .max-width-100 {
     max-width: 100%;
 }
 
 
-/* Custom fonts */
+/* FLOAT POSITIONS */
+
+.float-right {
+    text-align: right;
+}
+
+
+/* CUSTOM FONTS */
 
 @font-face {
-    font-family: SF-display;
-    src: url(../fonts/SF-display.ttf);
+    font-family: MetroFont;
+    src: url(../fonts/johnstonitcstd-medium.otf);
 }
 
 @font-face {
-    font-family: SF-Semibold;
-    src: url(../fonts/SF-display-Semibold.ttf);
+    font-family: MetroFontBold;
+    src: url(../fonts/johnston-itc-std-bold.otf);
+}
+
+
+/* ANIMATIONS */
+
+@keyframes floatingImage {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -14,6 +14,7 @@ nav {
     position: fixed !important;
     z-index: 999;
     font-family: MetroFont;
+    background-color: #ffffff00 !important;
 }
 
 .logo-image {
@@ -242,17 +243,31 @@ p {
 .img-profilepic {
     display: block;
     width: 10%;
-    -webkit-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
-    -moz-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
-    box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
     animation: floatingImage 4s ease-in-out infinite;
 }
 
+
+/*
+    -webkit-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+    -moz-box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+    box-shadow: 3px 2px 16px 3px rgba(0, 0, 51, 0.54);
+*/
+
 @media only screen and (max-width: 804px) {
     .img-profilepic {
-        display: none;
-        width: 560%;
+        display: none !important;
     }
+}
+
+.neumorphic-card-photo {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 6px 6px 8px 0 rgba(17, 0, 255, 0.3), -4px -4px 6px 0 rgba(0, 0, 0, .25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -558,16 +573,19 @@ button:active {
 
 @keyframes floatingImage {
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translatey(0px);
+        transform: translatex(0px);
+        transform: scale(1);
     }
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-20px);
+        transform: translatey(-30px);
+        transform: translatex(-10px);
+        transform: scale(1.1);
     }
     100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translatey(0px);
+        transform: translatex(0px);
+        transform: scale(1);
     }
 }
 
@@ -582,3 +600,6 @@ button:active {
         background-position: 0% 50%;
     }
 }
+
+
+/* DIVIDERS */
